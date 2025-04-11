@@ -1,0 +1,272 @@
+[
+  {
+    "qid": "http://www.freebase.com/view/en/bilbo_baggins",
+    "mid": "m.0g6z1",
+    "expected": "Bilbo Baggins",
+    "actual": "Old Bilbo"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/martin_luther_king_jr",
+    "mid": "m.051cc",
+    "expected": "Martin Luther King Jr",
+    "actual": "Martin Luther King, Jr."
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/united_states",
+    "mid": "m.09c7w0",
+    "expected": "United States",
+    "actual": "United States of America"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/anton_van_leeuwenhoek",
+    "mid": "m.0bj_v",
+    "expected": "Anton Van Leeuwenhoek",
+    "actual": "Antonie van Leeuwenhoek"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/chinese_language",
+    "mid": "m.05sxbvn",
+    "expected": "Chinese Language",
+    "actual": "Late Middle Chinese Language"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/new_york",
+    "mid": "m.02_286",
+    "expected": "New York",
+    "actual": "New York City"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/jew",
+    "mid": "m.03_gx",
+    "expected": "Jew",
+    "actual": "Judaism"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/australian_people",
+    "mid": "m.0bbz66j",
+    "expected": "Australian People",
+    "actual": "Australians"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/united_states",
+    "mid": "m.09c7w0",
+    "expected": "United States",
+    "actual": "United States of America"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/john_willams",
+    "mid": "m.0146pg",
+    "expected": "John Willams",
+    "actual": "John Williams"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/victoria_of_the_united_kingdom",
+    "mid": "m.01ww1f",
+    "expected": "Victoria Of The United Kingdom",
+    "actual": "Princess Victoria of the United Kingdom"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/united_staff",
+    "mid": "m.07t65",
+    "expected": "United Staff",
+    "actual": "United Nations"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/united_states",
+    "mid": "m.09c7w0",
+    "expected": "United States",
+    "actual": "United States of America"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/university_of_maryland_baltimore",
+    "mid": "m.02j2yf",
+    "expected": "University Of Maryland Baltimore",
+    "actual": "University of Maryland, Baltimore"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/harley-davidson",
+    "mid": "m.03ny2",
+    "expected": "Harley-Davidson",
+    "actual": "Harley-Davidson Motor Company"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/vlaams_language",
+    "mid": "m.049dc8",
+    "expected": "Flemish",
+    "actual": "Flemish language"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/united_states",
+    "mid": "m.09c7w0",
+    "expected": "United States",
+    "actual": "United States of America"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/solemnity_of_saint_joseph",
+    "mid": "m.0c08y",
+    "expected": "Joseph",
+    "actual": "Saint Joseph"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/united_states",
+    "mid": "m.09c7w0",
+    "expected": "United States",
+    "actual": "United States of America"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/stacey_slater",
+    "mid": "m.088np1",
+    "expected": "Stacey Slater",
+    "actual": "Stacey Branning"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/united_states",
+    "mid": "m.09c7w0",
+    "expected": "United States",
+    "actual": "United States of America"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/american_people_of_the_united_states",
+    "mid": "m.09c7w0",
+    "expected": "American People Of The United States",
+    "actual": "United States of America"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/israeli-palestinian_conflict",
+    "mid": "m.0cj5y",
+    "expected": "Israeli-Palestinian Conflict",
+    "actual": "Israeli–Palestinian conflict"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/napoleon_i_of_france",
+    "mid": "m.0j5b8",
+    "expected": "Napoleon I Of France",
+    "actual": "Napoleon Bonaparte"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/napoleon_i_of_france",
+    "mid": "m.0j5b8",
+    "expected": "Napoleon I Of France",
+    "actual": "Napoleon Bonaparte"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/juan_ponce_de_leon",
+    "mid": "m.0123f1",
+    "expected": "Juan Ponce De Leon",
+    "actual": "Juan Ponce de León"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/deere_company",
+    "mid": "m.027v3x",
+    "expected": "Deere Company",
+    "actual": "John Deere"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/malayalam_language",
+    "mid": "m.0999q",
+    "expected": "Malayalam",
+    "actual": "Malayalam Language"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/united_states",
+    "mid": "m.09c7w0",
+    "expected": "United States",
+    "actual": "United States of America"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/habiba_sarabi",
+    "mid": "m.06f5b_",
+    "expected": "Habiba Sarabi",
+    "actual": "Habiba Sarobi"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/warren_g_harding",
+    "mid": "m.081t6",
+    "expected": "Warren G Harding",
+    "actual": "Warren G. Harding"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/james_k_polk",
+    "mid": "m.042f1",
+    "expected": "James K Polk",
+    "actual": "James K. Polk"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/nike_inc",
+    "mid": "m.0lwkh",
+    "expected": "Nike Inc",
+    "actual": "Nike, Inc."
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/ulysses_s_grant",
+    "mid": "m.07t2k",
+    "expected": "Ulysses S Grant",
+    "actual": "Ulysses S. Grant"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/t_a_t_u",
+    "mid": "m.0182c4",
+    "expected": "T A T U",
+    "actual": "t.A.T.u."
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/nike_inc",
+    "mid": "m.0lwkh",
+    "expected": "Nike Inc",
+    "actual": "Nike, Inc."
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/d_carter",
+    "mid": "m.016kjs",
+    "expected": "D Carter",
+    "actual": "Lil Wayne"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/martin_luther_king_jr",
+    "mid": "m.051cc",
+    "expected": "Martin Luther King Jr",
+    "actual": "Martin Luther King, Jr."
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/russians",
+    "mid": "m.0g6ff",
+    "expected": "Russians",
+    "actual": "Russian"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/bentley",
+    "mid": "m.01l8p",
+    "expected": "Bentley",
+    "actual": "Bentley Motors Limited"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/bank_of_america",
+    "mid": "m.01yx7f",
+    "expected": "Bank Of America",
+    "actual": "Bank of America Corporation"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/sally_mclellan",
+    "mid": "m.0287hgn",
+    "expected": "Sally Mclellan",
+    "actual": "Sally Pearson"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/michigan-ohio_state_rivalry",
+    "mid": "m.0931ks",
+    "expected": "Michigan-Ohio State Rivalry",
+    "actual": "Michigan–Ohio State football rivalry"
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/john_forbes_nash",
+    "mid": "m.0pyqh",
+    "expected": "John Forbes Nash",
+    "actual": "John Forbes Nash, Jr."
+  },
+  {
+    "qid": "http://www.freebase.com/view/en/jesus",
+    "mid": "m.045m1_",
+    "expected": "Jesus",
+    "actual": "Jesus Christ"
+  }
+]
