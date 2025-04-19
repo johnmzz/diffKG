@@ -1,10 +1,15 @@
 import json
 from SPARQLWrapper import SPARQLWrapper, JSON
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 SPARQL_ENDPOINT = "http://localhost:9890/sparql"
-QA_FILE = "cwq.json"  # 替换为你的数据文件路径
+QA_FILE = "cwq.json"
+OUTPUT_FILE = "mismatch_report.json"
+CWQ_NEW_FILE = "cwq_new.json"
 
-def get_english_label(sparql, mid):
+
+def get_english_label(mid):
+    sparql = SPARQLWrapper(SPARQL_ENDPOINT)
     query = f"""
     PREFIX ns: <http://rdf.freebase.com/ns/>
     SELECT ?name
@@ -21,15 +26,31 @@ def get_english_label(sparql, mid):
         bindings = results.get("results", {}).get("bindings", [])
         if bindings:
             return bindings[0]["name"]["value"]
-        else:
-            return None
-    except Exception as e:
-        print(f"⚠️ SPARQL error for MID {mid}: {e}")
+    except Exception:
         return None
+    return None
+
+
+def run_sparql_query(sparql_str):
+    sparql = SPARQLWrapper(SPARQL_ENDPOINT)
+    sparql.setQuery(sparql_str)
+    sparql.setReturnFormat(JSON)
+    try:
+        results = sparql.query().convert()
+        bindings = results.get("results", {}).get("bindings", [])
+        answer_mids = []
+        for row in bindings:
+            if "x" in row:
+                uri = row["x"]["value"]
+                if uri.startswith("http://rdf.freebase.com/ns/"):
+                    mid = uri.replace("http://rdf.freebase.com/ns/", "")
+                    answer_mids.append(mid)
+        return answer_mids
+    except Exception:
+        return []
+
 
 def main():
-    sparql = SPARQLWrapper(SPARQL_ENDPOINT)
-
     with open(QA_FILE, "r", encoding="utf-8") as f:
         qa_data = json.load(f)
 
@@ -37,78 +58,133 @@ def main():
     total_entities = 0
     matched = 0
     failed = []
+    updated_qa_data = []
 
-    # 统计计数器
-    topic_1 = 0
-    topic_more = 0
-    answer_1 = 0
-    answer_more = 0
-    both_more = 0
+    topic_1 = topic_more = topic_more_than_2 = answer_1 = answer_more = both_more = 0
+    topic_more_than_2_ids = []
 
-    for i, qa in enumerate(qa_data):
-        topic_entities = qa.get("topic_entity", {})
-        topic_count = len(topic_entities)
+    answer_total = 0
+    answer_matched = 0
+    answer_mismatch = []
 
-        # 统计 topic entity 数量
-        if topic_count == 1:
-            topic_1 += 1
-        elif topic_count > 1:
-            topic_more += 1
+    print("🔍 Checking topic entity labels...")
+    topic_check_tasks = []
+    with ThreadPoolExecutor(max_workers=16) as executor:
+        for qa in qa_data:
+            topic_entities = qa.get("topic_entity", {})
+            if len(topic_entities) == 1:
+                topic_1 += 1
+            elif len(topic_entities) > 1:
+                topic_more += 1
+                if len(topic_entities) > 2:
+                    topic_more_than_2 += 1
+                    topic_more_than_2_ids.append(qa.get("ID", "UNKNOWN_ID"))
 
-        # 判断 answer 数量（兼容 str / list）
-        raw_answer = qa.get("answer", "")
-        if isinstance(raw_answer, str):
-            answer_count = 1 if raw_answer.strip() else 0
-        elif isinstance(raw_answer, list):
-            answer_count = len(raw_answer)
-        else:
-            answer_count = 0  # fallback
+            raw_answer = qa.get("answer", "")
+            if isinstance(raw_answer, str):
+                answer_count = 1 if raw_answer.strip() else 0
+            elif isinstance(raw_answer, list):
+                answer_count = len(raw_answer)
+            else:
+                answer_count = 0
 
-        # 统计 answer entity 数量
-        if answer_count == 1:
-            answer_1 += 1
-        elif answer_count > 1:
-            answer_more += 1
+            if answer_count == 1:
+                answer_1 += 1
+            elif answer_count > 1:
+                answer_more += 1
 
-        # 同时 >1 的情况
-        if topic_count > 1 and answer_count > 1:
-            both_more += 1
+            if len(topic_entities) > 1 and answer_count > 1:
+                both_more += 1
 
-        # 实体验证逻辑
-        for mid, expected_label in topic_entities.items():
-            total_entities += 1
-            actual_label = get_english_label(sparql, mid)
-            if actual_label and actual_label.lower() == expected_label.lower():
+            for mid, expected_label in topic_entities.items():
+                total_entities += 1
+                topic_check_tasks.append(executor.submit(
+                    lambda m, l: (m, l, get_english_label(m)),
+                    mid, expected_label
+                ))
+
+        for future in as_completed(topic_check_tasks):
+            mid, expected, actual = future.result()
+            if actual and actual.lower() == expected.lower():
                 matched += 1
             else:
                 failed.append({
+                    "type": "topic_entity",
                     "mid": mid,
-                    "expected": expected_label,
-                    "actual": actual_label
+                    "expected": expected,
+                    "actual": actual
                 })
 
-        if i % 20 == 0:
-            print(f"Progress: {i}/{total_qas}")
+    print("🔍 Checking answer entity via SPARQL query...")
+    answer_tasks = []
+    with ThreadPoolExecutor(max_workers=16) as executor:
+        for qa in qa_data:
+            sparql_query = qa.get("sparql", "")
+            annotated_answer = qa.get("answer", "").strip()
+            qid = qa.get("ID")
+            question = qa.get("question")
 
-    # 输出实体验证统计
-    print("\n📊 CWQ Entity Validation Summary")
+            def check_answer(qa):
+                mids = run_sparql_query(qa.get("sparql", ""))
+                answer_text = qa.get("answer", "").strip()
+                for mid in mids:
+                    label = get_english_label(mid)
+                    if label and label.lower() == answer_text.lower():
+                        qa["answer"] = {mid: label}
+                        return qa, True
+                qa["answer"] = {}  # No match
+                return qa, False
+
+            answer_tasks.append(executor.submit(check_answer, qa))
+
+        for future in as_completed(answer_tasks):
+            qa, matched_flag = future.result()
+            updated_qa_data.append(qa)
+            if matched_flag:
+                answer_matched += 1
+            else:
+                answer_mismatch.append({
+                    "type": "answer_entity",
+                    "qid": qa.get("ID"),
+                    "question": qa.get("question"),
+                    "expected": qa.get("answer", ""),
+                    "predicted_mid": None,
+                    "predicted_label": None
+                })
+            answer_total += 1
+
+    print("\n📊 Topic Entity Validation Summary")
     print(f"Total QA pairs: {total_qas}")
-    print(f"Total Entities: {total_entities}")
+    print(f"Total Topic Entities Checked: {total_entities}")
     print(f"✅ Matched: {matched}")
     print(f"❌ Failed: {len(failed)}")
 
-    if failed:
-        print("\n🔍 Some failures:")
-        for f in failed[:5]:
-            print(f"  MID: {f['mid']}, expected: '{f['expected']}', actual: '{f['actual']}'")
-
-    # 输出 entity 数量相关统计
-    print("\n📈 Topic / Answer Entity Count Stats")
+    print("\n📈 Topic / Answer Count Stats")
     print(f"🔹 Topic entity = 1 : {topic_1}")
     print(f"🔸 Topic entity > 1 : {topic_more}")
+    print(f"🔻 Topic entity > 2 : {topic_more_than_2}")
     print(f"🔹 Answer entity = 1 : {answer_1}")
     print(f"🔸 Answer entity > 1 : {answer_more}")
     print(f"⚠️  Both topic & answer > 1 : {both_more}")
+
+    print("\n📊 Answer Entity Match Stats")
+    print(f"Total SPARQL answer queries: {answer_total}")
+    print(f"✅ Answer matched: {answer_matched}")
+    print(f"❌ Answer mismatched: {len(answer_mismatch)}")
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as fout:
+        json.dump(failed + answer_mismatch, fout, indent=2, ensure_ascii=False)
+    print(f"\n📁 Mismatches saved to {OUTPUT_FILE}")
+
+    with open("topic_entity_gt2_ids.txt", "w", encoding="utf-8") as f:
+        for tid in topic_more_than_2_ids:
+            f.write(tid + "\n")
+    print(f"\n📁 Saved topic entity >2 IDs to topic_entity_gt2_ids.txt")
+
+    with open(CWQ_NEW_FILE, "w", encoding="utf-8") as fout:
+        json.dump(updated_qa_data, fout, indent=2, ensure_ascii=False)
+    print(f"\n📁 Updated CWQ data with answer mids saved to {CWQ_NEW_FILE}")
+
 
 if __name__ == "__main__":
     main()

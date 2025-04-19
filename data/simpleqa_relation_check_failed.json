@@ -1,0 +1,2893 @@
+[
+  {
+    "id": "QA-18",
+    "question": "what is a 1960 melodrama film",
+    "topic_entity": {
+      "m.01lrrt": "Melodrama"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "Because They're Young",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "Godmother",
+        "Clash by Night",
+        "A Lady Without Passport",
+        "The Student Prince in Old Heidelberg",
+        "Nongjungjo",
+        "Weather Is Good on Deribasovskaya, It Rains Again on Brighton Beach",
+        "Kama Sutra: A Tale of Love",
+        "Cruel Intentions",
+        "I Was a Teenage Werewolf",
+        "Stanley's Gig"
+      ]
+    }
+  },
+  {
+    "id": "QA-22",
+    "question": "What is the name of a title from the hindi genre",
+    "topic_entity": {
+      "m.03k50": "Hindi Language"
+    },
+    "relation": "titles",
+    "expected_answer": "Humraaz",
+    "tried_predicates": [
+      "media_common.netflix_genre.titles"
+    ],
+    "tried_answers": {
+      "media_common.netflix_genre.titles": [
+        "Jannat",
+        "Godmother",
+        "Saathiya",
+        "Pyaar Impossible!",
+        "Angoor",
+        "Mumbai Xpress",
+        "Commando",
+        "Life In A... Metro",
+        "Mamta",
+        "Kabhi Khushi Kabhie Gham"
+      ]
+    }
+  },
+  {
+    "id": "QA-35",
+    "question": "what's a good example of a dj mix album",
+    "topic_entity": {
+      "m.0df219": "DJ mix"
+    },
+    "relation": "albums",
+    "expected_answer": "The Odd Future Tape",
+    "tried_predicates": [
+      "music.album_content_type.albums"
+    ],
+    "tried_answers": {
+      "music.album_content_type.albums": [
+        "Sorry 4 the Wait",
+        "Ministry of Sound: Ibiza Annual 2008",
+        "Trance 75: Best of 2012",
+        "DJ Antoine",
+        "Dat Piff",
+        "Windblown",
+        "UP#13: Demdike Stare's Unsounded Podcast",
+        "Drum & Bass Arena 2014",
+        "Huewave",
+        "Trance: The Ultimate Collection 2010, Volume 2"
+      ]
+    }
+  },
+  {
+    "id": "QA-36",
+    "question": "what is a name of a documentary film",
+    "topic_entity": {
+      "m.0jtdp": "Documentary film"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "La Maison de la radio",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "Fat Camp: An MTV Docs Movie Presentation",
+        "Kampf um Norwegen \u2013 Feldzug 1940",
+        "Hotel Torgo",
+        "Soferet",
+        "La Lib\u00e9ration de Paris",
+        "Risk/Reward",
+        "At the Green Line",
+        "The City",
+        "Beyond Jurassic Park",
+        "Standing Silent Nation"
+      ]
+    }
+  },
+  {
+    "id": "QA-40",
+    "question": "what is a single-player sports video game",
+    "topic_entity": {
+      "m.02hjn4": "Single-player video game"
+    },
+    "relation": "games_with_this_mode",
+    "expected_answer": "Madden NFL '95",
+    "tried_predicates": [
+      "cvg.gameplay_mode.games_with_this_mode"
+    ],
+    "tried_answers": {
+      "cvg.gameplay_mode.games_with_this_mode": [
+        "Rugby League 2: World Cup Edition",
+        "Cave Story",
+        "Voxeliens",
+        "Gua-Le-Ni; or, The Horrendous Parade",
+        "Sam & Max: Abe Lincoln Must Die!",
+        "Marine Park Empire",
+        "Mario Kart Wii",
+        "F1 2009",
+        "Angry Birds",
+        "Nancy Drew: The Secret of Shadow Ranch"
+      ]
+    }
+  },
+  {
+    "id": "QA-42",
+    "question": "what album did thad jones release in 1957?",
+    "topic_entity": {
+      "m.02lx2r": "Album"
+    },
+    "relation": "albums",
+    "expected_answer": "Mad Thad",
+    "tried_predicates": [
+      "music.album_release_type.albums"
+    ],
+    "tried_answers": {
+      "music.album_release_type.albums": [
+        "Symphonic Suite Yamato",
+        "No Shame",
+        "Big Day Out 05",
+        "THE BEST OF KOEI Vol. 2",
+        "Music for the Advancement of Hip Hop",
+        "Guero",
+        "Schindler's List",
+        "Crash",
+        "Two Against Nature",
+        "The Broadway Album"
+      ]
+    }
+  },
+  {
+    "id": "QA-85",
+    "question": "What is the name of a political party that practices monarchism",
+    "topic_entity": {
+      "m.0g0gq": "Monarchism"
+    },
+    "relation": "political_parties",
+    "expected_answer": "Istiqlal Party",
+    "tried_predicates": [
+      "government.political_ideology.political_parties"
+    ],
+    "tried_answers": {
+      "government.political_ideology.political_parties": [
+        "Spanish Confederation of Autonomous Right-wing Groups",
+        "Russian Party",
+        "Abahuza",
+        "Parliamentary Monarchist Party",
+        "Popular Action",
+        "German People's Party",
+        "Front Line",
+        "Tories",
+        "Union of October 17",
+        "Funcinpec Party"
+      ]
+    }
+  },
+  {
+    "id": "QA-89",
+    "question": "Who is an artist associated with baroque?",
+    "topic_entity": {
+      "m.0194x": "Baroque"
+    },
+    "relation": "associated_artists",
+    "expected_answer": "Cosimo Fanzago",
+    "tried_predicates": [
+      "visual_art.art_period_movement.associated_artists"
+    ],
+    "tried_answers": {
+      "visual_art.art_period_movement.associated_artists": [
+        "Giovanna Garzoni",
+        "Sebastiano Conca",
+        "Abraham de Vries",
+        "Jacques d'Arthois",
+        "Juriaen van Streeck",
+        "Ferdinand Bol",
+        "Jan Steen",
+        "Andrea Vaccaro",
+        "Alonzo Cano",
+        "Claude Lorrain"
+      ]
+    }
+  },
+  {
+    "id": "QA-96",
+    "question": "What's a biographical film",
+    "topic_entity": {
+      "m.03bxz7": "Biographical film"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "Tap or Die",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "Serpico",
+        "What's Love Got to Do with It",
+        "Selena",
+        "Rogue Trader",
+        "Young Einstein",
+        "La Vie en rose",
+        "Christiane F. \u2013 We Children from Bahnhof Zoo",
+        "The Express",
+        "Luther",
+        "Risk/Reward"
+      ]
+    }
+  },
+  {
+    "id": "QA-109",
+    "question": "what is the title of a film that is a horror movie",
+    "topic_entity": {
+      "m.03npn": "Horror"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "Apollo 18",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "Over Your Dead Body",
+        "The Phantom of the Opera",
+        "Cube",
+        "The Evil Dead",
+        "King Kong",
+        "War of the Worlds",
+        "Sleepy Hollow High",
+        "The Nostril Picker",
+        "Ghidorah, the Three-Headed Monster",
+        "Dark Night"
+      ]
+    }
+  },
+  {
+    "id": "QA-133",
+    "question": "Name a famous Canadian horse.",
+    "topic_entity": {
+      "m.03k3r": "Horse"
+    },
+    "relation": "organisms_of_this_type",
+    "expected_answer": "George Royal",
+    "tried_predicates": [
+      "biology.organism_classification.organisms_of_this_type"
+    ],
+    "tried_answers": {
+      "biology.organism_classification.organisms_of_this_type": [
+        "Forward Pass",
+        "Harbinger",
+        "Vamoose",
+        "Clash Van De Vihta",
+        "California Chrome",
+        "Tonalist",
+        "Curlin",
+        "Fantastic Light",
+        "Alcibiades",
+        "Canonero II"
+      ]
+    }
+  },
+  {
+    "id": "QA-139",
+    "question": "What is a radio station that plays country?",
+    "topic_entity": {
+      "m.01lyv": "Country"
+    },
+    "relation": "stations",
+    "expected_answer": "WTNT-FM",
+    "tried_predicates": [
+      "broadcast.radio_format.stations"
+    ],
+    "tried_answers": {
+      "broadcast.radio_format.stations": [
+        "WBNZ",
+        "KAPB-FM",
+        "WXFL",
+        "WQMX",
+        "KAUU",
+        "KUBB",
+        "KKHK",
+        "WKCQ",
+        "WANB",
+        "KEGH"
+      ]
+    }
+  },
+  {
+    "id": "QA-142",
+    "question": "Who played infielder for the white sox",
+    "topic_entity": {
+      "m.02wszf": "Infielder"
+    },
+    "relation": "players",
+    "expected_answer": "Paul Konerko",
+    "tried_predicates": [
+      "sports.sports_position.players",
+      "baseball.baseball_position.players"
+    ],
+    "tried_answers": {
+      "sports.sports_position.players": [],
+      "baseball.baseball_position.players": [
+        "Matt Tolbert",
+        "Mickey Hatcher",
+        "Edwin Encarnaci\u00f3n",
+        "Ed Lucas",
+        "Jared Goedert",
+        "Gair Allie",
+        "Keisuke Kaneko",
+        "Masaaki  Koike",
+        "Liu Rodr\u00edguez",
+        "John Kennedy"
+      ]
+    }
+  },
+  {
+    "id": "QA-147",
+    "question": "What are the names of asteroids in the solar system",
+    "topic_entity": {
+      "m.06p5g": "Solar System"
+    },
+    "relation": "planetary_system",
+    "expected_answer": "699 Hela",
+    "tried_predicates": [
+      "astronomy.star_system.planetary_system"
+    ],
+    "tried_answers": {
+      "astronomy.star_system.planetary_system": [
+        "7803 Adachi",
+        "7833 Nilstamm",
+        "4178 Mimeev",
+        "(7502) 1996 VP7",
+        "(8172) 1991 RP15",
+        "(8211) 1995 EB1",
+        "(8263) 1986 QT",
+        "(9360) 1992 EV13",
+        "(9443) 1997 HR9",
+        "(11294) 1992 CK"
+      ]
+    }
+  },
+  {
+    "id": "QA-156",
+    "question": "who is a person born in the united states",
+    "topic_entity": {
+      "m.09c7w0": "United States of America"
+    },
+    "relation": "people_born_here",
+    "expected_answer": "Edward B. Vreeland",
+    "tried_predicates": [
+      "location.location.people_born_here"
+    ],
+    "tried_answers": {
+      "location.location.people_born_here": [
+        "Diana Muldaur",
+        "Wendy Thomas",
+        "Shelly Cole",
+        "Jack Sheridan",
+        "Steven Miller",
+        "Carl Cameron",
+        "Lesley Ann Warren",
+        "Gary Cohn",
+        "Julie Zwillich",
+        "Elliot Scheiner"
+      ]
+    }
+  },
+  {
+    "id": "QA-159",
+    "question": "whats an example of a  suspense book",
+    "topic_entity": {
+      "m.0c3351": "Suspense"
+    },
+    "relation": "books_in_this_genre",
+    "expected_answer": "Star Struck",
+    "tried_predicates": [
+      "media_common.literary_genre.books_in_this_genre"
+    ],
+    "tried_answers": {
+      "media_common.literary_genre.books_in_this_genre": [
+        "The Case of the Constant Suicides",
+        "The Roman Hat Mystery",
+        "The French Powder Mystery",
+        "The Greek Coffin Mystery",
+        "The Egyptian Cross Mystery",
+        "The American Gun Mystery",
+        "The Siamese Twin Mystery",
+        "The Chinese Orange Mystery",
+        "The Spanish Cape Mystery",
+        "Halfway House"
+      ]
+    }
+  },
+  {
+    "id": "QA-164",
+    "question": "What kind of food is compatible with veganism?",
+    "topic_entity": {
+      "m.07_hy": "Veganism"
+    },
+    "relation": "compatible_ingredients",
+    "expected_answer": "Kinoko Mushroom",
+    "tried_predicates": [
+      "food.dietary_restriction.compatible_ingredients",
+      "food.dietary_restriction.incompatible_ingredients"
+    ],
+    "tried_answers": {
+      "food.dietary_restriction.compatible_ingredients": [
+        "Carbonated water",
+        "Maidenhair Tree",
+        "Vigna unguiculata subsp. sesquipedalis",
+        "Soft drink",
+        "Starch",
+        "Moringa",
+        "Pea",
+        "Durian",
+        "Tanacetum balsamita",
+        "Borassus flabellifer"
+      ],
+      "food.dietary_restriction.incompatible_ingredients": [
+        "Cheddar cheese",
+        "Shortening",
+        "Ham",
+        "Herring",
+        "Chicken meat",
+        "Adobo sauce",
+        "Pork belly",
+        "Sour cream",
+        "Eel",
+        "Catfish"
+      ]
+    }
+  },
+  {
+    "id": "QA-179",
+    "question": "what is a black-and-white film",
+    "topic_entity": {
+      "m.01g6gs": "Black-and-white"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "Full Confession",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "Captain January",
+        "Buenos Aires Plateada",
+        "El Gran camarada",
+        "The Glass Key",
+        "Cab Calloway's Jitterbug Party",
+        "Suddenly",
+        "His Desperate Deed",
+        "Blood Money",
+        "The Life and Deeds of the Immortal Vo\u017ed Kara\u0111or\u0111e",
+        "The Man Who Came to Dinner"
+      ]
+    }
+  },
+  {
+    "id": "QA-181",
+    "question": "Who is someone that is african american?",
+    "topic_entity": {
+      "m.0x67": "African American"
+    },
+    "relation": "people",
+    "expected_answer": "Lily Ann Granderson",
+    "tried_predicates": [
+      "people.ethnicity.people"
+    ],
+    "tried_answers": {
+      "people.ethnicity.people": [
+        "Nichelle Nichols",
+        "Shane Mosley",
+        "Michael Moorer",
+        "Dewey 'Pigmeat' Markham",
+        "Johnny Copeland",
+        "Robert Cray",
+        "Raheem Devaughn",
+        "Canray Fontenot",
+        "Jesse Jackson, Jr.",
+        "Patricia Jessamy"
+      ]
+    }
+  },
+  {
+    "id": "QA-198",
+    "question": "What is the name of a track by claudio abbado",
+    "topic_entity": {
+      "m.01l9pz": "Claudio Abbado"
+    },
+    "relation": "track",
+    "expected_answer": "Concerto for Piano and Orchestra no. 3 in D minor, op. 30: III. Finale. Alla breve",
+    "tried_predicates": [
+      "music.artist.track",
+      "music.artist.track_contributions"
+    ],
+    "tried_answers": {
+      "music.artist.track": [
+        "Concerto for Violin and Cello in A minor, op. 102: II. Andante",
+        "Classical Symphony in D major, op. 25: IV. Finale",
+        "Violin Concerto No. 2 in G minor, Op. 63: III. Allegro, ben marcato",
+        "Rosamunde Ouverture, D. 644 \"The Magic Harp\"",
+        "Symphony No. 3 in D minor: Part 1, I (a). Kr\u00e4ftig. Entschieden",
+        "Rhapsody on a Theme of Paganini, op. 43: Var. IX. L\u2019istesso tempo",
+        "Rhapsody on a Theme of Paganini, op. 43: Var. XVI. Allegretto",
+        "Symphony in B-flat major, Hob. I:102: III. Menuet. Allegro - Trio",
+        "Peter and the Wolf, op. 67: \u201cEarly one morning Peter opened the gate \u2026\u201d Andantino",
+        "Peter and the Wolf, op. 67: \u201cPeter, in the meantime, stood behind the closed gate \u2026\u201d Andantino, come prima - Vivo - Andante molto - Vivo - Andante"
+      ],
+      "music.artist.track_contributions": []
+    }
+  },
+  {
+    "id": "QA-202",
+    "question": "What's an example of a historical fiction book",
+    "topic_entity": {
+      "m.02p0szs": "Historical fiction"
+    },
+    "relation": "books_in_this_genre",
+    "expected_answer": "Tested by Fate",
+    "tried_predicates": [
+      "media_common.literary_genre.books_in_this_genre"
+    ],
+    "tried_answers": {
+      "media_common.literary_genre.books_in_this_genre": [
+        "Robinson Crusoe",
+        "Joseph Andrews",
+        "Anna of the Five Towns",
+        "Oscar and Lucinda",
+        "The Bull from the Sea",
+        "Venetia",
+        "The Talisman Ring",
+        "HMS Surprise",
+        "Clarissa Oakes",
+        "Song of the Earth"
+      ]
+    }
+  },
+  {
+    "id": "QA-207",
+    "question": "what is a compatible ingredient with the vegetarian cuisine",
+    "topic_entity": {
+      "m.07_lq": "Vegetarian food"
+    },
+    "relation": "compatible_ingredients",
+    "expected_answer": "Grapefruit",
+    "tried_predicates": [
+      "food.dietary_restriction.compatible_ingredients",
+      "food.dietary_restriction.incompatible_ingredients"
+    ],
+    "tried_answers": {
+      "food.dietary_restriction.compatible_ingredients": [
+        "Carbonated water",
+        "Maidenhair Tree",
+        "Cheddar cheese",
+        "Vigna unguiculata subsp. sesquipedalis",
+        "Soft drink",
+        "Starch",
+        "Moringa",
+        "Pea",
+        "Durian",
+        "Tanacetum balsamita"
+      ],
+      "food.dietary_restriction.incompatible_ingredients": [
+        "Shortening",
+        "Ham",
+        "Herring",
+        "Chicken meat",
+        "Pork belly",
+        "Eel",
+        "Catfish",
+        "Scallop",
+        "Food coloring",
+        "Red Food Coloring"
+      ]
+    }
+  },
+  {
+    "id": "QA-210",
+    "question": "Which game uses multiplayer gameplay mode?",
+    "topic_entity": {
+      "m.01z747": "Multiplayer video game"
+    },
+    "relation": "games_with_this_mode",
+    "expected_answer": "Sacred",
+    "tried_predicates": [
+      "cvg.gameplay_mode.games_with_this_mode"
+    ],
+    "tried_answers": {
+      "cvg.gameplay_mode.games_with_this_mode": [
+        "Rugby League 2: World Cup Edition",
+        "Mario Kart Wii",
+        "F1 2009",
+        "Colin McRae: Dirt 2",
+        "Def Jam: Fight for NY",
+        "Formula One 2003",
+        "Burnout Legends",
+        "Napoleon: Total War",
+        "Gears of War 3",
+        "Lego Pirates of the Caribbean: The Video Game"
+      ]
+    }
+  },
+  {
+    "id": "QA-216",
+    "question": "what type of music doe damien starkey preform",
+    "topic_entity": {
+      "m.0k8ycwt": "Damien Starkey"
+    },
+    "relation": "genre",
+    "expected_answer": "Hip Hop",
+    "tried_predicates": [
+      "music.artist.genre"
+    ],
+    "tried_answers": {
+      "music.artist.genre": [
+        "Alternative rock",
+        "Country",
+        "Hip hop music",
+        "Hard rock",
+        "Alternative metal",
+        "Grunge"
+      ]
+    }
+  },
+  {
+    "id": "QA-218",
+    "question": "Name a romance novel",
+    "topic_entity": {
+      "m.01qxvh": "Romance novel"
+    },
+    "relation": "books_in_this_genre",
+    "expected_answer": "The Flame and the Flower",
+    "tried_predicates": [
+      "media_common.literary_genre.books_in_this_genre"
+    ],
+    "tried_answers": {
+      "media_common.literary_genre.books_in_this_genre": [
+        "The Initiation",
+        "A Room with a View",
+        "Blackwood Farm",
+        "Redemption",
+        "Madame Bovary",
+        "Magnificent Obsession",
+        "Anna of the Five Towns",
+        "Rudin",
+        "Venetia",
+        "The Talisman Ring"
+      ]
+    }
+  },
+  {
+    "id": "QA-220",
+    "question": "which artist performs a house music genre",
+    "topic_entity": {
+      "m.03mb9": "House music"
+    },
+    "relation": "artists",
+    "expected_answer": "Blue Pearl",
+    "tried_predicates": [
+      "music.genre.artists"
+    ],
+    "tried_answers": {
+      "music.genre.artists": [
+        "Richard Humpty Vission",
+        "Bad Boy Bill",
+        "Dirty South",
+        "Darren Emerson",
+        "Nero",
+        "Daft Punk",
+        "Dada Life",
+        "Ben Westbeech",
+        "Yukihiro Takahashi",
+        "Lil Louis"
+      ]
+    }
+  },
+  {
+    "id": "QA-224",
+    "question": "what is an album named",
+    "topic_entity": {
+      "m.02lx2r": "Album"
+    },
+    "relation": "albums",
+    "expected_answer": "Here's to the Mourning",
+    "tried_predicates": [
+      "music.album_release_type.albums"
+    ],
+    "tried_answers": {
+      "music.album_release_type.albums": [
+        "Symphonic Suite Yamato",
+        "No Shame",
+        "Big Day Out 05",
+        "THE BEST OF KOEI Vol. 2",
+        "Music for the Advancement of Hip Hop",
+        "Guero",
+        "Schindler's List",
+        "Crash",
+        "Two Against Nature",
+        "The Broadway Album"
+      ]
+    }
+  },
+  {
+    "id": "QA-228",
+    "question": "what film is in the black-and-white film genre?",
+    "topic_entity": {
+      "m.01g6gs": "Black-and-white"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "Miss Fatty's Seaside Lovers",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "Captain January",
+        "Buenos Aires Plateada",
+        "El Gran camarada",
+        "The Glass Key",
+        "Cab Calloway's Jitterbug Party",
+        "Suddenly",
+        "His Desperate Deed",
+        "Blood Money",
+        "The Life and Deeds of the Immortal Vo\u017ed Kara\u0111or\u0111e",
+        "The Man Who Came to Dinner"
+      ]
+    }
+  },
+  {
+    "id": "QA-237",
+    "question": "what is the album in the electronic dance music genre",
+    "topic_entity": {
+      "m.08cyft": "Electronic dance music"
+    },
+    "relation": "albums",
+    "expected_answer": "Cobra Verde",
+    "tried_predicates": [
+      "music.genre.albums"
+    ],
+    "tried_answers": {
+      "music.genre.albums": [
+        "MDNA",
+        "The Last Days of Gravity",
+        "L\u00e9gende du scorpion \u00e0 quatre queues",
+        "Who Are the Skulls?",
+        "Fortune",
+        "Wish Upon a Blackstar",
+        "Radio 1 Anti-Nazi Mix",
+        "Urchin",
+        "I'm What's There to Show That Something's Missing",
+        "The Middle of Nowhere"
+      ]
+    }
+  },
+  {
+    "id": "QA-242",
+    "question": "name a 1998 studio album",
+    "topic_entity": {
+      "m.06vw6v": "Studio album"
+    },
+    "relation": "albums",
+    "expected_answer": "Le Bapt\u00eame",
+    "tried_predicates": [
+      "music.album_content_type.albums"
+    ],
+    "tried_answers": {
+      "music.album_content_type.albums": [
+        "Guero",
+        "Crash",
+        "Two Against Nature",
+        "The Broadway Album",
+        "A Tribute to Miles",
+        "The Sky Is Crying",
+        "Release Therapy",
+        "Plans",
+        "Brat\u0159\u00ed\u010dku, zav\u00edrej vr\u00e1tka",
+        "Blues on the Bayou"
+      ]
+    }
+  },
+  {
+    "id": "QA-260",
+    "question": "Who is an artist known their art form being painting?",
+    "topic_entity": {
+      "m.05qdh": "Painting"
+    },
+    "relation": "artists",
+    "expected_answer": "Talbot Hughes",
+    "tried_predicates": [
+      "visual_art.visual_art_form.artists"
+    ],
+    "tried_answers": {
+      "visual_art.visual_art_form.artists": [
+        "Charles Marion Russell",
+        "Edward Steichen",
+        "Anna Kavan",
+        "Ralph Hedley",
+        "Watanabe Kazan",
+        "Franz Bischoff",
+        "Giovanna Garzoni",
+        "Jean-Paul Riopelle",
+        "Robert Combas",
+        "Alan Rankle"
+      ]
+    }
+  },
+  {
+    "id": "QA-267",
+    "question": "what is a 1941short film",
+    "topic_entity": {
+      "m.02hmvc": "Short Film"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "The Little Whirlwind",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "The Award",
+        "First Shift",
+        "Mushroom Monster",
+        "Manolo",
+        "Big Girl",
+        "Richard Cardinal: Cry from a Diary of a M\u00e9tis Child",
+        "Zoetrope",
+        "The Firecracker",
+        "High Steaks",
+        "Nit-Witty Kitty"
+      ]
+    }
+  },
+  {
+    "id": "QA-277",
+    "question": "Name a rock and roll artist",
+    "topic_entity": {
+      "m.07sbbz2": "Rock and roll"
+    },
+    "relation": "artists",
+    "expected_answer": "Pivot",
+    "tried_predicates": [
+      "music.genre.artists"
+    ],
+    "tried_answers": {
+      "music.genre.artists": [
+        "Agent 51",
+        "Dr. John",
+        "Alain Whyte",
+        "Dum Dum Girls",
+        "DumDum Boys",
+        "Bobby Helm",
+        "The Vogues",
+        "Fito & Fitipaldis",
+        "Little Red",
+        "The Brian Setzer Orchestra"
+      ]
+    }
+  },
+  {
+    "id": "QA-281",
+    "question": "whats the name of a game show",
+    "topic_entity": {
+      "m.03fpg": "Game show"
+    },
+    "relation": "programs",
+    "expected_answer": "Kim Be\u015f Y\u00fcz Milyar \u0130ster?",
+    "tried_predicates": [
+      "tv.tv_genre.programs"
+    ],
+    "tried_answers": {
+      "tv.tv_genre.programs": [
+        "Mastermind",
+        "World Poker Tour",
+        "Hider in the House",
+        "Weakest Link",
+        "Now You See It",
+        "Chain Reaction",
+        "Celebrity Juice",
+        "My Big Fat Obnoxious Boss",
+        "What the Dickens",
+        "Expeditie Robinson"
+      ]
+    }
+  },
+  {
+    "id": "QA-283",
+    "question": "who is a melodic death metal artist?",
+    "topic_entity": {
+      "m.02yw1c": "Melodic death metal"
+    },
+    "relation": "artists",
+    "expected_answer": "In-Quest",
+    "tried_predicates": [
+      "music.genre.artists"
+    ],
+    "tried_answers": {
+      "music.genre.artists": [
+        "Profane Omen",
+        "Soul Embraced",
+        "The Chasm",
+        "Gary Jules",
+        "8 Foot Sativa",
+        "Moonlyght",
+        "Bill Steer",
+        "Foreign Objects",
+        "Burgerkill",
+        "Ian Wilson"
+      ]
+    }
+  },
+  {
+    "id": "QA-289",
+    "question": "what city is in pennsylvania",
+    "topic_entity": {
+      "m.05tbn": "Pennsylvania"
+    },
+    "relation": "contains",
+    "expected_answer": "Beallsville",
+    "tried_predicates": [
+      "location.location.contains",
+      "fictional_universe.fictional_setting.contains",
+      "location.location.partially_contains",
+      "location.location.partiallycontains"
+    ],
+    "tried_answers": {
+      "location.location.contains": [
+        "Lakewood, Pennsylvania",
+        "Morrisdale, Pennsylvania",
+        "Community College of Allegheny County",
+        "Weiss Hall",
+        "Summerdale",
+        "Marlborough Township",
+        "Port Carbon",
+        "Oil City",
+        "The American College of Financial Services",
+        "Georgetown, Lancaster County, Pennsylvania"
+      ],
+      "fictional_universe.fictional_setting.contains": [
+        "Brewer",
+        "Olinger",
+        "Llanview",
+        "Corinth, Pennsylvania",
+        "Pine Valley",
+        "Fallen Area"
+      ],
+      "location.location.partially_contains": [
+        "Youghiogheny River",
+        "Delaware Water Gap",
+        "Sideling Hill",
+        "Blue Ridge Mountains",
+        "Appalachian Mountains",
+        "Monocacy River",
+        "Susquehanna River",
+        "Allegheny Mountains",
+        "Monongahela River",
+        "Allegheny River"
+      ],
+      "location.location.partiallycontains": []
+    }
+  },
+  {
+    "id": "QA-314",
+    "question": "Name a detective film.",
+    "topic_entity": {
+      "m.0vjs6": "Detective"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "Thirteen at Dinner",
+    "tried_predicates": [],
+    "tried_answers": {}
+  },
+  {
+    "id": "QA-321",
+    "question": "Name someone who died from respiratory failure",
+    "topic_entity": {
+      "m.019dmc": "Respiratory failure"
+    },
+    "relation": "people",
+    "expected_answer": "Kei Iinuma",
+    "tried_predicates": [
+      "people.cause_of_death.people"
+    ],
+    "tried_answers": {
+      "people.cause_of_death.people": [
+        "Besse Cooper",
+        "Alice Coltrane",
+        "Ray Kane",
+        "Haile Selassie",
+        "Philippe L\u00e9otard",
+        "Gor\u014d Naya",
+        "Seiichi Fukuda",
+        "Chiang Fang-liang",
+        "Emilio Ruiz del R\u00edo",
+        "D\u00e9cio Pignatari"
+      ]
+    }
+  },
+  {
+    "id": "QA-325",
+    "question": "what is a topic",
+    "topic_entity": {
+      "m.04mny2g": "Topic"
+    },
+    "relation": "instance",
+    "expected_answer": "Hot Lotto",
+    "tried_predicates": [
+      "freebase.type_profile.instance_count"
+    ],
+    "tried_answers": {
+      "freebase.type_profile.instance_count": []
+    }
+  },
+  {
+    "id": "QA-327",
+    "question": "what movie is a type of action film?",
+    "topic_entity": {
+      "m.02kdv5l": "Action Film"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "Any Gun Can Play",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "Ballistic",
+        "Mushroom Monster",
+        "Hot Pursuit",
+        "Serpico",
+        "Dirty Harry",
+        "Twister",
+        "Battle Royale",
+        "Straight Shooter",
+        "Jatt Jeona Morh",
+        "Dynamite Warrior"
+      ]
+    }
+  },
+  {
+    "id": "QA-346",
+    "question": "what are some examples of villages in united kingdom?",
+    "topic_entity": {
+      "m.07ssc": "United Kingdom"
+    },
+    "relation": "contains",
+    "expected_answer": "Read, Lancashire",
+    "tried_predicates": [
+      "location.location.contains",
+      "location.location.partially_contains",
+      "location.location.partiallycontains"
+    ],
+    "tried_answers": {
+      "location.location.contains": [
+        "Merseyside",
+        "Crewe",
+        "Ayr",
+        "Hammersmith",
+        "Newcastle University",
+        "Hellfire Caves",
+        "Barnsley",
+        "Birkenhead",
+        "Chippenham",
+        "Watford"
+      ],
+      "location.location.partially_contains": [
+        "River Foyle",
+        "River Blackwater",
+        "River Erne",
+        "River Finn",
+        "Cuilcagh",
+        "Euroregion East Sussex/Seine Maritime/Somme"
+      ],
+      "location.location.partiallycontains": []
+    }
+  },
+  {
+    "id": "QA-370",
+    "question": "What's a common fruit in asia",
+    "topic_entity": {
+      "m.03yw5h3": "Fruit"
+    },
+    "relation": "instance",
+    "expected_answer": "Pigeon pea",
+    "tried_predicates": [
+      "freebase.type_profile.instance_count"
+    ],
+    "tried_answers": {
+      "freebase.type_profile.instance_count": []
+    }
+  },
+  {
+    "id": "QA-373",
+    "question": "What is the name of a christmas film",
+    "topic_entity": {
+      "m.01vq3": "Christmas"
+    },
+    "relation": "films",
+    "expected_answer": "A Very Brady Christmas",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre",
+      "film.film_subject.films"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "The Family Man"
+      ],
+      "film.film_subject.films": [
+        "Love Actually",
+        "Beauty and the Beast: The Enchanted Christmas",
+        "The Man Who Came to Dinner",
+        "Ebenezer",
+        "Die Hard",
+        "Trading Places",
+        "Silent Night, Deadly Night",
+        "Reckless",
+        "Crackers",
+        "Rudolph the Red-Nosed Reindeer: The Movie"
+      ]
+    }
+  },
+  {
+    "id": "QA-374",
+    "question": "name a professional actor.",
+    "topic_entity": {
+      "m.02hrh1q": "Actor"
+    },
+    "relation": "people_with_this_profession",
+    "expected_answer": "Warren Hong",
+    "tried_predicates": [
+      "people.profession.people_with_this_profession"
+    ],
+    "tried_answers": {
+      "people.profession.people_with_this_profession": [
+        "Piet Kohler",
+        "Mait Malmsten",
+        "Karen Marie L\u00f8wert",
+        "Ant\u00f3nio \u00c9vora",
+        "Harry van Rijthoven",
+        "Ilija Stanojevic-Cica",
+        "David Cabecinha",
+        "Sophie K\u00f6hler-van Dijk",
+        "Kanwal",
+        "Laura Hidalgo"
+      ]
+    }
+  },
+  {
+    "id": "QA-389",
+    "question": "Name a university in the united states",
+    "topic_entity": {
+      "m.09c7w0": "United States of America"
+    },
+    "relation": "contains",
+    "expected_answer": "Seton Hill University",
+    "tried_predicates": [
+      "location.location.contains"
+    ],
+    "tried_answers": {
+      "location.location.contains": [
+        "Lewisburg",
+        "Keyser",
+        "Saint Peters",
+        "02703-1097",
+        "University of California, Riverside",
+        "Lynnfield",
+        "Belmont",
+        "Shelter Island",
+        "Fairchild",
+        "University of Mississippi Medical Center School of Dentistry"
+      ]
+    }
+  },
+  {
+    "id": "QA-404",
+    "question": "which basketball player is from bulgaria",
+    "topic_entity": {
+      "m.02h664x": "Basketball player"
+    },
+    "relation": "people_with_this_profession",
+    "expected_answer": "Evladiya Slavcheva-Stefanova",
+    "tried_predicates": [
+      "people.profession.people_with_this_profession"
+    ],
+    "tried_answers": {
+      "people.profession.people_with_this_profession": [
+        "Eric Gordon",
+        "Gary Forbes",
+        "Miao Lijie",
+        "Michael Cooper",
+        "Sean Marks",
+        "Ian Mahinmi",
+        "Brendan Haywood",
+        "Zaza Pachulia",
+        "Butch Carter",
+        "Hassan Whiteside"
+      ]
+    }
+  },
+  {
+    "id": "QA-412",
+    "question": "what is the name of a action-adventure game",
+    "topic_entity": {
+      "m.02ntfj": "Action-adventure game"
+    },
+    "relation": "games",
+    "expected_answer": "The Mark of Kri",
+    "tried_predicates": [
+      "cvg.cvg_genre.games"
+    ],
+    "tried_answers": {
+      "cvg.cvg_genre.games": [
+        "Fable",
+        "Daxter",
+        "Peter Jackson's King Kong: The Official Game of the Movie",
+        "Lego Pirates of the Caribbean: The Video Game",
+        "Super Mario Galaxy",
+        "Ry\u016b ga Gotoku Ishin!",
+        "Ryu Ga Gotoku Kenzan",
+        "Yakuza 3",
+        "Herbert's Dummy Run",
+        "Yakuza"
+      ]
+    }
+  },
+  {
+    "id": "QA-417",
+    "question": "what is an album that features rock music",
+    "topic_entity": {
+      "m.06by7": "Rock music"
+    },
+    "relation": "albums",
+    "expected_answer": "It's in There",
+    "tried_predicates": [
+      "music.genre.albums"
+    ],
+    "tried_answers": {
+      "music.genre.albums": [
+        "Crash",
+        "Two Against Nature",
+        "We Can't Dance",
+        "Disguises",
+        "Battle Studies",
+        "Le Noise",
+        "White Nights",
+        "Immortal",
+        "Sticky Fingers",
+        "Elvis Recorded Live on Stage in Memphis"
+      ]
+    }
+  },
+  {
+    "id": "QA-432",
+    "question": "What's a romance film",
+    "topic_entity": {
+      "m.02l7c8": "Romance Film"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "Secrets of an Undercover Wife",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "The Perfect Education 5 : Amazing Story",
+        "The Snow Queen",
+        "Between Friends: Ithala",
+        "Three Colors: Blue",
+        "Three Colors: White",
+        "This Sporting Life",
+        "Wild River",
+        "Muriel's Wedding",
+        "American Wedding",
+        "Just My Luck"
+      ]
+    }
+  },
+  {
+    "id": "QA-434",
+    "question": "Name a game on the super nintendo entertainment system.",
+    "topic_entity": {
+      "m.070c4": "Super Nintendo Entertainment System"
+    },
+    "relation": "games_on_this_platform",
+    "expected_answer": "Momotarou Dentetsu Happy",
+    "tried_predicates": [
+      "cvg.cvg_platform.games_on_this_platform"
+    ],
+    "tried_answers": {
+      "cvg.cvg_platform.games_on_this_platform": [
+        "Space Invaders",
+        "Majin Tensei II: Spiral Nemesis",
+        "Super Butoden 3",
+        "Vortex",
+        "Boxing Legends of the Ring",
+        "Super Bomberman 2",
+        "Jim Power: The Lost Dimension in 3-D",
+        "Pac-In-Time",
+        "Aerobiz",
+        "Shinseiki GPX - Cyber Formula"
+      ]
+    }
+  },
+  {
+    "id": "QA-447",
+    "question": "What's a pop music album featuring boney m",
+    "topic_entity": {
+      "m.064t9": "Pop music"
+    },
+    "relation": "albums",
+    "expected_answer": "Christmas With Boney M",
+    "tried_predicates": [
+      "music.genre.albums"
+    ],
+    "tried_answers": {
+      "music.genre.albums": [
+        "No Shame",
+        "Shania Twain: Live",
+        "M\u00e1s que alcanzar una estrella",
+        "Battle Studies",
+        "Como Ama una Mujer",
+        "Immortal",
+        "MDNA",
+        "Oops! I Did It Again: The Best of Britney Spears",
+        "For You",
+        "No More Pain"
+      ]
+    }
+  },
+  {
+    "id": "QA-452",
+    "question": "who's a famous person from st. louis",
+    "topic_entity": {
+      "m.06wxw": "St. Louis"
+    },
+    "relation": "people_born_here",
+    "expected_answer": "Jerry L. Wallace",
+    "tried_predicates": [
+      "location.location.people_born_here"
+    ],
+    "tried_answers": {
+      "location.location.people_born_here": [
+        "Charles Marion Russell",
+        "Rosemary Theby",
+        "Eugene C. Butcher",
+        "Gregg Berger",
+        "Sean Blakemore",
+        "Gerry Becker",
+        "Lennie Niehaus",
+        "Will Bruin",
+        "Greg Osby",
+        "Chris Cheek"
+      ]
+    }
+  },
+  {
+    "id": "QA-472",
+    "question": "what's a crime fiction movie",
+    "topic_entity": {
+      "m.0lsxr": "Crime Fiction"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "Espejos rotos",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "The Big Shot",
+        "Boyz n the Hood",
+        "Serpico",
+        "A Certain Sacrifice",
+        "Drugstore Cowboy",
+        "Dirty Harry",
+        "Jatt Jeona Morh",
+        "Rogue Trader",
+        "The Death Collector",
+        "Murder a la Mod"
+      ]
+    }
+  },
+  {
+    "id": "QA-502",
+    "question": "Which football player was born in syracuse, new york?",
+    "topic_entity": {
+      "m.071cn": "Syracuse"
+    },
+    "relation": "people_born_here",
+    "expected_answer": "Robert Drummond",
+    "tried_predicates": [
+      "location.location.people_born_here"
+    ],
+    "tried_answers": {
+      "location.location.people_born_here": [
+        "William Lundigan",
+        "Margaret C. Snyder",
+        "Frank Lucien Hale",
+        "Jay Leach",
+        "Rick Brunson",
+        "Samuel Bayer",
+        "Marty Byrnes",
+        "Lee Brown Coye",
+        "Keith B. Alexander",
+        "Mitchell Lewis"
+      ]
+    }
+  },
+  {
+    "id": "QA-506",
+    "question": "what is a book in the fiction literary genre?",
+    "topic_entity": {
+      "m.02xlf": "Fiction"
+    },
+    "relation": "books_in_this_genre",
+    "expected_answer": "The Act of Roger Murgatroyd",
+    "tried_predicates": [
+      "media_common.literary_genre.books_in_this_genre"
+    ],
+    "tried_answers": {
+      "media_common.literary_genre.books_in_this_genre": [
+        "Out of Africa",
+        "The Stars, Like Dust",
+        "The Case of the Constant Suicides",
+        "Fulgrim",
+        "The Roman Hat Mystery",
+        "The French Powder Mystery",
+        "The Greek Coffin Mystery",
+        "The American Gun Mystery",
+        "The Siamese Twin Mystery",
+        "The Chinese Orange Mystery"
+      ]
+    }
+  },
+  {
+    "id": "QA-531",
+    "question": "Name a compilation album.",
+    "topic_entity": {
+      "m.02jbfk": "Compilation album"
+    },
+    "relation": "albums",
+    "expected_answer": "Ultra.Weekend 6",
+    "tried_predicates": [
+      "music.genre.albums",
+      "music.album_content_type.albums"
+    ],
+    "tried_answers": {
+      "music.genre.albums": [
+        "In the Mind of Jamie Cullum",
+        "Divas En Espa\u00f1ol",
+        "Jackpot! The Best Bette",
+        "Les Clips Vol. II",
+        "7aum Arivu",
+        "The Final",
+        "L'Autre",
+        "Music Videos I",
+        "Past Present",
+        "French Kiss 2"
+      ],
+      "music.album_content_type.albums": [
+        "Big Day Out 05",
+        "THE BEST OF KOEI Vol. 2",
+        "Music for the Advancement of Hip Hop",
+        "Six Suites for Unaccompanied Cello",
+        "The Sky Is Crying",
+        "Torino Boys",
+        "M\u00e1s que alcanzar una estrella",
+        "White Nights",
+        "Sorry 4 the Wait",
+        "From Kuno to Kebyar: Balinese Gamelan Angklung"
+      ]
+    }
+  },
+  {
+    "id": "QA-532",
+    "question": "which language is part of niger\u2013congo languages",
+    "topic_entity": {
+      "m.05f46": "Niger\u2013Congo languages"
+    },
+    "relation": "languages",
+    "expected_answer": "Idun Language",
+    "tried_predicates": [
+      "language.language_family.languages"
+    ],
+    "tried_answers": {
+      "language.language_family.languages": [
+        "Pande Language",
+        "Mbugwe Language",
+        "Foodo Language",
+        "Mbelime Language",
+        "Agatu Language",
+        "Rungi",
+        "Biafada Language",
+        "Gundi Language",
+        "Mono Language",
+        "Manyika Language"
+      ]
+    }
+  },
+  {
+    "id": "QA-542",
+    "question": "what is an example of a single-player video game",
+    "topic_entity": {
+      "m.02hjn4": "Single-player video game"
+    },
+    "relation": "games_with_this_mode",
+    "expected_answer": "Death by Degrees",
+    "tried_predicates": [
+      "cvg.gameplay_mode.games_with_this_mode"
+    ],
+    "tried_answers": {
+      "cvg.gameplay_mode.games_with_this_mode": [
+        "Rugby League 2: World Cup Edition",
+        "Cave Story",
+        "Voxeliens",
+        "Gua-Le-Ni; or, The Horrendous Parade",
+        "Sam & Max: Abe Lincoln Must Die!",
+        "Marine Park Empire",
+        "Mario Kart Wii",
+        "F1 2009",
+        "Angry Birds",
+        "Nancy Drew: The Secret of Shadow Ranch"
+      ]
+    }
+  },
+  {
+    "id": "QA-554",
+    "question": "Who was born in ireland?",
+    "topic_entity": {
+      "m.012wgb": "Ireland"
+    },
+    "relation": "people_born_here",
+    "expected_answer": "William Lowry",
+    "tried_predicates": [
+      "location.location.people_born_here"
+    ],
+    "tried_answers": {
+      "location.location.people_born_here": [
+        "Willie Clancy",
+        "Clement Wilson",
+        "Charles Bradley",
+        "Ronan Browne",
+        "William Preston",
+        "Patrick J. Kyle",
+        "Harry Buckle",
+        "Sean Ryan",
+        "Katharine Tynan",
+        "Bolton Hall"
+      ]
+    }
+  },
+  {
+    "id": "QA-558",
+    "question": "what is 1992 winter olympics",
+    "topic_entity": {
+      "m.0sx7r": "1992 Winter Olympics"
+    },
+    "relation": "notable_types",
+    "expected_answer": "Award-Winning Work",
+    "tried_predicates": [
+      "common.topic.notable_types"
+    ],
+    "tried_answers": {
+      "common.topic.notable_types": [
+        "Olympic games"
+      ]
+    }
+  },
+  {
+    "id": "QA-563",
+    "question": "what's a local neighborhood in detroit",
+    "topic_entity": {
+      "m.05gk2hl": "Local"
+    },
+    "relation": "listings",
+    "expected_answer": "Monroe Avenue Commercial Buildings",
+    "tried_predicates": [
+      "base.usnris.significance_level.listings"
+    ],
+    "tried_answers": {
+      "base.usnris.significance_level.listings": [
+        "Barn Bluff",
+        "Bear Mountain Bridge",
+        "Sunrise Theatre",
+        "Grand Concourse Apartments",
+        "Shortridge High School",
+        "Bankers Loan and Trust Company Building",
+        "Union Pacific Railroad Depot",
+        "Larimer Memorial Library",
+        "William Waterfield House",
+        "Carolina Theatre"
+      ]
+    }
+  },
+  {
+    "id": "QA-572",
+    "question": "What would be a speculative fiction book",
+    "topic_entity": {
+      "m.014dfn": "Speculative fiction"
+    },
+    "relation": "books_in_this_genre",
+    "expected_answer": "Confessions of a Ghoul and Other Stories",
+    "tried_predicates": [
+      "media_common.literary_genre.books_in_this_genre"
+    ],
+    "tried_answers": {
+      "media_common.literary_genre.books_in_this_genre": [
+        "The Jungle Book",
+        "Naked Lunch",
+        "The Stars, Like Dust",
+        "Fulgrim",
+        "The Graveyard Book",
+        "The Alchemyst: The Secrets of the Immortal Nicholas Flamel",
+        "The Temporal Void",
+        "The Dreaming Void",
+        "The Door Between",
+        "The Devil to Pay"
+      ]
+    }
+  },
+  {
+    "id": "QA-576",
+    "question": "what is allowed to be eaten on a gluten-free diet",
+    "topic_entity": {
+      "m.034n2g": "Gluten-free diet"
+    },
+    "relation": "compatible_ingredients",
+    "expected_answer": "Bitter orange",
+    "tried_predicates": [
+      "food.dietary_restriction.compatible_ingredients",
+      "food.dietary_restriction.incompatible_ingredients"
+    ],
+    "tried_answers": {
+      "food.dietary_restriction.compatible_ingredients": [
+        "Carbonated water",
+        "Maidenhair Tree",
+        "Cheddar cheese",
+        "Shortening",
+        "Ham",
+        "Vigna unguiculata subsp. sesquipedalis",
+        "Soft drink",
+        "Moringa",
+        "Herring",
+        "Chicken meat"
+      ],
+      "food.dietary_restriction.incompatible_ingredients": [
+        "Dough",
+        "Wheat gluten",
+        "Cereal germ",
+        "Rye whiskey",
+        "Bread crumbs",
+        "Panko",
+        "Cracker",
+        "Scotch whisky",
+        "Atta flour",
+        "Biscuit"
+      ]
+    }
+  },
+  {
+    "id": "QA-586",
+    "question": "who played outfielder?",
+    "topic_entity": {
+      "m.02lyr4": "Outfielder"
+    },
+    "relation": "players",
+    "expected_answer": "Jack McDonald",
+    "tried_predicates": [
+      "sports.sports_position.players",
+      "baseball.baseball_position.players"
+    ],
+    "tried_answers": {
+      "sports.sports_position.players": [],
+      "baseball.baseball_position.players": [
+        "Garret Anderson",
+        "Josh Reddick",
+        "Jorge Piedra",
+        "Mickey Hatcher",
+        "Ryan Spilborghs",
+        "Chipper Jones",
+        "Adam Eaton",
+        "Nyjer Morgan",
+        "Lefty Houtz",
+        "James Durham"
+      ]
+    }
+  },
+  {
+    "id": "QA-588",
+    "question": "what is an album title including the history of elmore james",
+    "topic_entity": {
+      "m.02lx2r": "Album"
+    },
+    "relation": "albums",
+    "expected_answer": "The Sky Is Crying: The History of Elmore James",
+    "tried_predicates": [
+      "music.album_release_type.albums"
+    ],
+    "tried_answers": {
+      "music.album_release_type.albums": [
+        "Symphonic Suite Yamato",
+        "No Shame",
+        "Big Day Out 05",
+        "THE BEST OF KOEI Vol. 2",
+        "Music for the Advancement of Hip Hop",
+        "Guero",
+        "Schindler's List",
+        "Crash",
+        "Two Against Nature",
+        "The Broadway Album"
+      ]
+    }
+  },
+  {
+    "id": "QA-589",
+    "question": "What is the name of a india state?",
+    "topic_entity": {
+      "m.02h_bxr": "India State"
+    },
+    "relation": "instance",
+    "expected_answer": "Maharashtra",
+    "tried_predicates": [
+      "freebase.type_profile.instance_count"
+    ],
+    "tried_answers": {
+      "freebase.type_profile.instance_count": []
+    }
+  },
+  {
+    "id": "QA-599",
+    "question": "whats the title of a  compilation album by the statler brothers",
+    "topic_entity": {
+      "m.02jbfk": "Compilation album"
+    },
+    "relation": "albums",
+    "expected_answer": "Sing the Classics",
+    "tried_predicates": [
+      "music.genre.albums",
+      "music.album_content_type.albums"
+    ],
+    "tried_answers": {
+      "music.genre.albums": [
+        "In the Mind of Jamie Cullum",
+        "Divas En Espa\u00f1ol",
+        "Jackpot! The Best Bette",
+        "Les Clips Vol. II",
+        "7aum Arivu",
+        "The Final",
+        "L'Autre",
+        "Music Videos I",
+        "Past Present",
+        "French Kiss 2"
+      ],
+      "music.album_content_type.albums": [
+        "Big Day Out 05",
+        "THE BEST OF KOEI Vol. 2",
+        "Music for the Advancement of Hip Hop",
+        "Six Suites for Unaccompanied Cello",
+        "The Sky Is Crying",
+        "Torino Boys",
+        "M\u00e1s que alcanzar una estrella",
+        "White Nights",
+        "Sorry 4 the Wait",
+        "From Kuno to Kebyar: Balinese Gamelan Angklung"
+      ]
+    }
+  },
+  {
+    "id": "QA-626",
+    "question": "which religion is theresa of portugal, countess of flanders",
+    "topic_entity": {
+      "m.06xftq": "Theresa of Portugal, Countess of Flanders"
+    },
+    "relation": "religion",
+    "expected_answer": "Roman Catholic Church",
+    "tried_predicates": [
+      "people.person.religion"
+    ],
+    "tried_answers": {
+      "people.person.religion": [
+        "Catholicism"
+      ]
+    }
+  },
+  {
+    "id": "QA-636",
+    "question": "What is the title of a  fiction book?",
+    "topic_entity": {
+      "m.02xlf": "Fiction"
+    },
+    "relation": "books_in_this_genre",
+    "expected_answer": "Noble House",
+    "tried_predicates": [
+      "media_common.literary_genre.books_in_this_genre"
+    ],
+    "tried_answers": {
+      "media_common.literary_genre.books_in_this_genre": [
+        "Out of Africa",
+        "The Stars, Like Dust",
+        "The Case of the Constant Suicides",
+        "Fulgrim",
+        "The Roman Hat Mystery",
+        "The French Powder Mystery",
+        "The Greek Coffin Mystery",
+        "The American Gun Mystery",
+        "The Siamese Twin Mystery",
+        "The Chinese Orange Mystery"
+      ]
+    }
+  },
+  {
+    "id": "QA-638",
+    "question": "what compilation album did thin lizzy release?",
+    "topic_entity": {
+      "m.02jbfk": "Compilation album"
+    },
+    "relation": "albums",
+    "expected_answer": "Remembering \u2013 Part 1",
+    "tried_predicates": [
+      "music.genre.albums",
+      "music.album_content_type.albums"
+    ],
+    "tried_answers": {
+      "music.genre.albums": [
+        "In the Mind of Jamie Cullum",
+        "Divas En Espa\u00f1ol",
+        "Jackpot! The Best Bette",
+        "Les Clips Vol. II",
+        "7aum Arivu",
+        "The Final",
+        "L'Autre",
+        "Music Videos I",
+        "Past Present",
+        "French Kiss 2"
+      ],
+      "music.album_content_type.albums": [
+        "Big Day Out 05",
+        "THE BEST OF KOEI Vol. 2",
+        "Music for the Advancement of Hip Hop",
+        "Six Suites for Unaccompanied Cello",
+        "The Sky Is Crying",
+        "Torino Boys",
+        "M\u00e1s que alcanzar una estrella",
+        "White Nights",
+        "Sorry 4 the Wait",
+        "From Kuno to Kebyar: Balinese Gamelan Angklung"
+      ]
+    }
+  },
+  {
+    "id": "QA-642",
+    "question": "whats the title of a film whose production company is  universal studios",
+    "topic_entity": {
+      "m.016tw3": "Universal Studios"
+    },
+    "relation": "films",
+    "expected_answer": "House of 1000 Corpses",
+    "tried_predicates": [
+      "film.film_distributor.films_distributed",
+      "film.film_location.featured_in_films",
+      "film.production_company.films"
+    ],
+    "tried_answers": {
+      "film.film_distributor.films_distributed": [],
+      "film.film_location.featured_in_films": [
+        "Frankenstein",
+        "Land of the Lost",
+        "20,000 Leagues Under the Sea",
+        "Flags of Our Fathers"
+      ],
+      "film.production_company.films": [
+        "American Wedding",
+        "Twister",
+        "The Phantom of the Opera",
+        "Love Actually",
+        "Jesus",
+        "This Island Earth",
+        "Legend",
+        "Jaws 3-D",
+        "The Boxer",
+        "Step Down to Terror"
+      ]
+    }
+  },
+  {
+    "id": "QA-664",
+    "question": "who is a football defender",
+    "topic_entity": {
+      "m.02_j1w": "Defender"
+    },
+    "relation": "players",
+    "expected_answer": "Ashley Palmer",
+    "tried_predicates": [
+      "soccer.football_position.players",
+      "sports.sports_position.players"
+    ],
+    "tried_answers": {
+      "soccer.football_position.players": [
+        "Rio Ferdinand",
+        "Lothar Matth\u00e4us",
+        "Mattia Cassani",
+        "Yordan Minev",
+        "Kees Zwamborn",
+        "Carlos Cu\u00e9llar",
+        "Cornelius Bernard Huggins",
+        "Antol\u00edn Alcaraz",
+        "Ali Abbas Al-Hilfi",
+        "J\u00e1mison Olave"
+      ],
+      "sports.sports_position.players": [
+        "Lorenzo Gonnelli"
+      ]
+    }
+  },
+  {
+    "id": "QA-688",
+    "question": "What is an example of a period piece film?",
+    "topic_entity": {
+      "m.04xvlr": "Historical period drama"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "Inserts",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "Drugstore Cowboy",
+        "Luther",
+        "Rob Roy",
+        "1969",
+        "The Mill on the Floss",
+        "The War Bride",
+        "The Murders in the Rue Morgue",
+        "Margaret's Museum",
+        "Wah-Wah",
+        "Factory Girl"
+      ]
+    }
+  },
+  {
+    "id": "QA-703",
+    "question": "What is a location in central european time zone?",
+    "topic_entity": {
+      "m.02llzg": "Central European Time Zone"
+    },
+    "relation": "locations_in_this_time_zone",
+    "expected_answer": "Marianopoli",
+    "tried_predicates": [
+      "time.time_zone.locations_in_this_time_zone"
+    ],
+    "tried_answers": {
+      "time.time_zone.locations_in_this_time_zone": [
+        "Ny\u00edrmih\u00e1lydi",
+        "Kapelle-op-den-Bos",
+        "Ulm",
+        "Pays de la Loire",
+        "Mitrovica, Kosovo",
+        "U\u017eice",
+        "Zambr\u00f3w",
+        "Comino",
+        "A\u00efn Madhi District",
+        "Cardedeu"
+      ]
+    }
+  },
+  {
+    "id": "QA-705",
+    "question": "what is a drug?",
+    "topic_entity": {
+      "m.02kjb_": "Drug"
+    },
+    "relation": "drug_formulations",
+    "expected_answer": "Zinc oxide, octinoxate 0.19/0.075 liquid",
+    "tried_predicates": [
+      "medicine.drug_formulation_category.drug_formulations"
+    ],
+    "tried_answers": {
+      "medicine.drug_formulation_category.drug_formulations": [
+        "Avobenzone,homosalate, octisalate,octocrylene,oxybenzone 0.03/0.1/0.05/0.027/0.05 lotion",
+        "Trazodone hydrochloride 50 tablet",
+        "Isopropyl alcohol 0.7 liquid",
+        "Neomycin and polymyxin b sulfates and dexamethasone 1/3.5/10000 ointment",
+        "Vitamin a, vitamin c, vitamin d, vitamin e, vitamin b1, vitamin b2, vitamin b12, niacin, vitamin b6, fluoride 5/35/400/2/0.5/8/0.4/0.6/0.5/1500 solution",
+        "Chromium picolinate 1000 capsule",
+        "Famciclovir 500 film coated tablet",
+        "Dexamethasone 0.75 tablet",
+        "Vitamin a, vitamin d, thiamine, riboflavin, niacin, pyridoxine, folic acid, fluoride ion, ascorbic acid, .alpha.-tocopherol-acetate-dl, cyanocobalamin 15/60/4.5/0.25/0.3/13.5/1.05/1.2/1.05/2500/400 chewable tablet",
+        "Benzalkonium chloride, povidone-iodine, acetaminophen, aspirin, diphenhydramine hydrochloride, ibuprofen, bacitracin zinc, neomycin sulfate, polymyxin b sulfate 0.004/0.098/325/325/25/200/400/5/5000 kit"
+      ]
+    }
+  },
+  {
+    "id": "QA-711",
+    "question": "who was born in canada?",
+    "topic_entity": {
+      "m.0d060g": "Canada"
+    },
+    "relation": "people_born_here",
+    "expected_answer": "Vanessa Grant",
+    "tried_predicates": [
+      "location.location.people_born_here"
+    ],
+    "tried_answers": {
+      "location.location.people_born_here": [
+        "Ted Kotcheff",
+        "Les Bowie",
+        "Vincent Gagnon",
+        "Jamie Moore",
+        "William Brunton",
+        "Steven Dann",
+        "Colette Boky",
+        "Jeffrey McFadden",
+        "Jody Bell",
+        "Trish Dolman"
+      ]
+    }
+  },
+  {
+    "id": "QA-717",
+    "question": "who was born in antwerp",
+    "topic_entity": {
+      "m.0fydw": "Antwerp"
+    },
+    "relation": "people_born_here",
+    "expected_answer": "Meir Brandsdorfer",
+    "tried_predicates": [
+      "location.location.people_born_here"
+    ],
+    "tried_answers": {
+      "location.location.people_born_here": [
+        "Jerry Ropero",
+        "Gustaf Wappers",
+        "Fran\u00e7ois Van Den Bosch",
+        "Albert Cahen",
+        "Hendrik Conscience",
+        "Maurice Gilliams",
+        "Sebald de Weert",
+        "Tortol Lumanza",
+        "Anna Bijns",
+        "Hieronymus Galle"
+      ]
+    }
+  },
+  {
+    "id": "QA-726",
+    "question": "What is cola a notable example of",
+    "topic_entity": {
+      "m.023ls": "Cola"
+    },
+    "relation": "notable_types",
+    "expected_answer": "Food",
+    "tried_predicates": [
+      "common.topic.notable_types"
+    ],
+    "tried_answers": {
+      "common.topic.notable_types": [
+        "Beverage"
+      ]
+    }
+  },
+  {
+    "id": "QA-731",
+    "question": "name a 2007 American film parody",
+    "topic_entity": {
+      "m.0gf28": "Parody"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "Slipstream",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "Young Einstein",
+        "The Great White Hype",
+        "Jabberwocky",
+        "The Rutles",
+        "The Dock Brief",
+        "Teknolust",
+        "Play It Again, Sam",
+        "Sons of Provo",
+        "Ultrachrist!",
+        "Carry On Constable"
+      ]
+    }
+  },
+  {
+    "id": "QA-735",
+    "question": "Name a single-player game",
+    "topic_entity": {
+      "m.02hjn4": "Single-player video game"
+    },
+    "relation": "games_with_this_mode",
+    "expected_answer": "Lego Battles: Ninjago",
+    "tried_predicates": [
+      "cvg.gameplay_mode.games_with_this_mode"
+    ],
+    "tried_answers": {
+      "cvg.gameplay_mode.games_with_this_mode": [
+        "Rugby League 2: World Cup Edition",
+        "Cave Story",
+        "Voxeliens",
+        "Gua-Le-Ni; or, The Horrendous Parade",
+        "Sam & Max: Abe Lincoln Must Die!",
+        "Marine Park Empire",
+        "Mario Kart Wii",
+        "F1 2009",
+        "Angry Birds",
+        "Nancy Drew: The Secret of Shadow Ranch"
+      ]
+    }
+  },
+  {
+    "id": "QA-749",
+    "question": "who is a famous instrumentalist that plays the  drum",
+    "topic_entity": {
+      "m.026t6": "Drums"
+    },
+    "relation": "instrumentalists",
+    "expected_answer": "Marky Ramone",
+    "tried_predicates": [
+      "music.instrument.instrumentalists"
+    ],
+    "tried_answers": {
+      "music.instrument.instrumentalists": [
+        "Gary Busey",
+        "Joe Walsh",
+        "Marilyn Manson",
+        "Bardo Pond",
+        "Christofer Johnsson",
+        "Jason Newsted",
+        "Ed O'Brien",
+        "Gotye",
+        "Gus Johnson",
+        "Bill Steer"
+      ]
+    }
+  },
+  {
+    "id": "QA-754",
+    "question": "name an india film genre",
+    "topic_entity": {
+      "m.03rk0": "India"
+    },
+    "relation": "titles",
+    "expected_answer": "Om Jai Jagadish",
+    "tried_predicates": [],
+    "tried_answers": {}
+  },
+  {
+    "id": "QA-758",
+    "question": "what type of school is fordham university",
+    "topic_entity": {
+      "m.027kp3": "Fordham University"
+    },
+    "relation": "school_type",
+    "expected_answer": "Society of Jesus",
+    "tried_predicates": [
+      "education.educational_institution.school_type"
+    ],
+    "tried_answers": {
+      "education.educational_institution.school_type": [
+        "Private university",
+        "Catholic school",
+        "Independent school"
+      ]
+    }
+  },
+  {
+    "id": "QA-783",
+    "question": "what film is in the genre mystery?",
+    "topic_entity": {
+      "m.02n4kr": "Mystery"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "Nostradamus, the Genie of Darkness",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "Three Colors: Blue",
+        "Three Colors: White",
+        "Dirty Harry",
+        "The Auteur Theory",
+        "Cube",
+        "Who Killed Mary What's 'Er Name?",
+        "Murder a la Mod",
+        "Case Closed: The Time Bombed Skyscraper",
+        "Detective Conan: Jolly Roger in the Deep Azure",
+        "Do Jasoos"
+      ]
+    }
+  },
+  {
+    "id": "QA-787",
+    "question": "What is the name of a thriller (genre) film",
+    "topic_entity": {
+      "m.01jfsb": "Thriller"
+    },
+    "relation": "films_in_this_genre",
+    "expected_answer": "Dark Spells",
+    "tried_predicates": [
+      "film.film_genre.films_in_this_genre"
+    ],
+    "tried_answers": {
+      "film.film_genre.films_in_this_genre": [
+        "Ballistic",
+        "Serpico",
+        "Dirty Harry",
+        "Twister",
+        "Battle Royale",
+        "The Auteur Theory",
+        "Cube",
+        "Dynamite Warrior",
+        "Pretty Maids All in a Row",
+        "Sukiyaki Western Django"
+      ]
+    }
+  },
+  {
+    "id": "QA-795",
+    "question": "Who was born in the city of san francisco?",
+    "topic_entity": {
+      "m.0d6lp": "San Francisco"
+    },
+    "relation": "people_born_here",
+    "expected_answer": "Courtney Thorne-Smith",
+    "tried_predicates": [
+      "location.location.people_born_here"
+    ],
+    "tried_answers": {
+      "location.location.people_born_here": [
+        "Andra\u00e9 Crouch",
+        "Benjamin Bratt",
+        "Gracie Allen",
+        "Umaga",
+        "Robin Wagner",
+        "Johnny Miller",
+        "Louise Bryant",
+        "Sam Fatu",
+        "Kurt Fuller",
+        "Fathia Ghali"
+      ]
+    }
+  },
+  {
+    "id": "QA-800",
+    "question": "Who is a south African football defender and midfielder?",
+    "topic_entity": {
+      "m.02nzb8": "Midfielder"
+    },
+    "relation": "players",
+    "expected_answer": "Benson Mhlongo",
+    "tried_predicates": [
+      "soccer.football_position.players",
+      "sports.sports_position.players"
+    ],
+    "tried_answers": {
+      "soccer.football_position.players": [
+        "Lothar Matth\u00e4us",
+        "Milan Jovanovi\u0107",
+        "Jonathan Santana",
+        "Jim Harvey",
+        "Bai He",
+        "Sheriff Suma",
+        "Sotiris Ninis",
+        "Constantinos Charalambidis",
+        "Shi Jiayi",
+        "Anthony Annan"
+      ],
+      "sports.sports_position.players": []
+    }
+  },
+  {
+    "id": "QA-803",
+    "question": "what belgian player plays as a defender in football",
+    "topic_entity": {
+      "m.02_j1w": "Defender"
+    },
+    "relation": "players",
+    "expected_answer": "Nansha Kalonji",
+    "tried_predicates": [
+      "soccer.football_position.players",
+      "sports.sports_position.players"
+    ],
+    "tried_answers": {
+      "soccer.football_position.players": [
+        "Rio Ferdinand",
+        "Lothar Matth\u00e4us",
+        "Mattia Cassani",
+        "Yordan Minev",
+        "Kees Zwamborn",
+        "Carlos Cu\u00e9llar",
+        "Cornelius Bernard Huggins",
+        "Antol\u00edn Alcaraz",
+        "Ali Abbas Al-Hilfi",
+        "J\u00e1mison Olave"
+      ],
+      "sports.sports_position.players": [
+        "Lorenzo Gonnelli"
+      ]
+    }
+  },
+  {
+    "id": "QA-824",
+    "question": "whats the name of film score composer",
+    "topic_entity": {
+      "m.017_qw": "Film score"
+    },
+    "relation": "artists",
+    "expected_answer": "Alain Lanty",
+    "tried_predicates": [
+      "music.genre.artists"
+    ],
+    "tried_answers": {
+      "music.genre.artists": [
+        "Bronis\u0142aw Kaper",
+        "S. Mohinder",
+        "Paul Buckmaster",
+        "Kyle Eastwood",
+        "Egisto Macchi",
+        "Bobo Shashi",
+        "Mark De Gli Antoni",
+        "Midnight Syndicate",
+        "Craig Safan",
+        "A. Badale"
+      ]
+    }
+  },
+  {
+    "id": "QA-831",
+    "question": "What did astronomer seiji ueda discover?",
+    "topic_entity": {
+      "m.038_4_": "Seiji Ueda"
+    },
+    "relation": "astronomical_objects_discovered",
+    "expected_answer": "(9603) 1991 VG2",
+    "tried_predicates": [
+      "astronomy.astronomer.astronomical_objects_discovered"
+    ],
+    "tried_answers": {
+      "astronomy.astronomer.astronomical_objects_discovered": [
+        "(8211) 1995 EB1",
+        "(29165) 1989 UK1",
+        "(20097) 1994 UL2",
+        "(9959) 1991 VF2",
+        "(7615) 1996 TA11",
+        "(7834) 1993 JL",
+        "(7751) 1988 UA",
+        "(6348) 1995 CH1",
+        "(9787) 1995 BA3",
+        "8414 Atsuko"
+      ]
+    }
+  },
+  {
+    "id": "QA-834",
+    "question": "Which ruler was born in beijing?",
+    "topic_entity": {
+      "m.01914": "Beijing"
+    },
+    "relation": "people_born_here",
+    "expected_answer": "Zhengtong Emperor",
+    "tried_predicates": [
+      "location.location.people_born_here"
+    ],
+    "tried_answers": {
+      "location.location.people_born_here": [
+        "Dean Shek",
+        "Rain Li",
+        "Qianlong Emperor",
+        "Zhang Nan",
+        "Zhou Xiaowen",
+        "Shen Zhihua",
+        "Ai Weiwei",
+        "Zhang Xinxin",
+        "Liu Shishi",
+        "Haibo Huang"
+      ]
+    }
+  },
+  {
+    "id": "QA-838",
+    "question": "Who was born in bandel?",
+    "topic_entity": {
+      "m.0gcfrr": "Bandel"
+    },
+    "relation": "people_born_here",
+    "expected_answer": "Biswajit Saha",
+    "tried_predicates": [
+      "location.location.people_born_here"
+    ],
+    "tried_answers": {
+      "location.location.people_born_here": [
+        "Sarat Chandra Chattopadhyay",
+        "Rajat Kumar Das",
+        "Saroj Nalini Dutt"
+      ]
+    }
+  },
+  {
+    "id": "QA-848",
+    "question": "iso 9000 is what type of management structure",
+    "topic_entity": {
+      "m.012slh": "ISO 9000"
+    },
+    "relation": "type",
+    "expected_answer": "Concerns Profile",
+    "tried_predicates": [
+      "common.topic.notable_types",
+      "kg.object_profile.prominent_type",
+      "type.object.type",
+      "base.technologyofdoing.knowledge_worker_practice.ptype"
+    ],
+    "tried_answers": {
+      "common.topic.notable_types": [
+        "Literature Subject"
+      ],
+      "kg.object_profile.prominent_type": [],
+      "type.object.type": [],
+      "base.technologyofdoing.knowledge_worker_practice.ptype": [
+        "Abstract"
+      ]
+    }
+  },
+  {
+    "id": "QA-850",
+    "question": "what company is known as limited liability company",
+    "topic_entity": {
+      "m.01prdc": "Limited liability company"
+    },
+    "relation": "companies_of_this_type",
+    "expected_answer": "Global Broadcasting",
+    "tried_predicates": [
+      "business.company_type.companies_of_this_type"
+    ],
+    "tried_answers": {
+      "business.company_type.companies_of_this_type": [
+        "Kerr Communications",
+        "Management 360",
+        "Evolved Luxury Floors",
+        "Progressive Enterprises",
+        "Phillips Law Firm",
+        "Designconnected",
+        "Become Interactive",
+        "Burger Time",
+        "Onell Design",
+        "VolunteerMark"
+      ]
+    }
+  },
+  {
+    "id": "QA-853",
+    "question": "Name a famous publisher from Boston",
+    "topic_entity": {
+      "m.0hz28": "Publishing"
+    },
+    "relation": "companies",
+    "expected_answer": "Gilbert & Dean",
+    "tried_predicates": [
+      "business.industry.companies"
+    ],
+    "tried_answers": {
+      "business.industry.companies": [
+        "Crown Publishing Group",
+        "Bauer Media Group",
+        "Viking Press",
+        "Augsburg Fortress Publishers",
+        "Prometheus Books",
+        "Phaidon Press",
+        "Cormorant Books",
+        "Cassell",
+        "Eland Books",
+        "Vintage International"
+      ]
+    }
+  },
+  {
+    "id": "QA-863",
+    "question": "What city uses central european time zone",
+    "topic_entity": {
+      "m.02llzg": "Central European Time Zone"
+    },
+    "relation": "locations_in_this_time_zone",
+    "expected_answer": "Lucinasco",
+    "tried_predicates": [
+      "time.time_zone.locations_in_this_time_zone"
+    ],
+    "tried_answers": {
+      "time.time_zone.locations_in_this_time_zone": [
+        "Ny\u00edrmih\u00e1lydi",
+        "Kapelle-op-den-Bos",
+        "Ulm",
+        "Pays de la Loire",
+        "Mitrovica, Kosovo",
+        "U\u017eice",
+        "Zambr\u00f3w",
+        "Comino",
+        "A\u00efn Madhi District",
+        "Cardedeu"
+      ]
+    }
+  },
+  {
+    "id": "QA-864",
+    "question": "Name a notable rock music album",
+    "topic_entity": {
+      "m.06by7": "Rock music"
+    },
+    "relation": "albums",
+    "expected_answer": "Neuromantic",
+    "tried_predicates": [
+      "music.genre.albums"
+    ],
+    "tried_answers": {
+      "music.genre.albums": [
+        "Crash",
+        "Two Against Nature",
+        "We Can't Dance",
+        "Disguises",
+        "Battle Studies",
+        "Le Noise",
+        "White Nights",
+        "Immortal",
+        "Sticky Fingers",
+        "Elvis Recorded Live on Stage in Memphis"
+      ]
+    }
+  },
+  {
+    "id": "QA-870",
+    "question": "what asteroid was discovered in 1998?",
+    "topic_entity": {
+      "m.0cqbc": "Asteroid belt"
+    },
+    "relation": "asteroid_group_members",
+    "expected_answer": "(12887) 1998 QP35",
+    "tried_predicates": [
+      "astronomy.asteroid_group.asteroid_group_members"
+    ],
+    "tried_answers": {
+      "astronomy.asteroid_group.asteroid_group_members": [
+        "7803 Adachi",
+        "7833 Nilstamm",
+        "4178 Mimeev",
+        "(7502) 1996 VP7",
+        "(8172) 1991 RP15",
+        "(8211) 1995 EB1",
+        "(8263) 1986 QT",
+        "(9360) 1992 EV13",
+        "(9443) 1997 HR9",
+        "(12201) 1981 ED12"
+      ]
+    }
+  },
+  {
+    "id": "QA-883",
+    "question": "who is a professional businessman",
+    "topic_entity": {
+      "m.012t_z": "Businessperson"
+    },
+    "relation": "people_with_this_profession",
+    "expected_answer": "Sam Gores",
+    "tried_predicates": [
+      "people.profession.people_with_this_profession"
+    ],
+    "tried_answers": {
+      "people.profession.people_with_this_profession": [
+        "Conrad Black",
+        "David Packard",
+        "Chris Jericho (Fozzy)*",
+        "Torrey Westrom",
+        "Leigh Steinberg",
+        "William H. Harris",
+        "Jeffrey C. Taylor",
+        "Donald K. Tarlton",
+        "Henry Taylor Blow",
+        "Bill Rancic"
+      ]
+    }
+  },
+  {
+    "id": "QA-904",
+    "question": "What United States Air Force Officer is interred at the Arlington National Cemetery?",
+    "topic_entity": {
+      "m.0lbp_": "Arlington National Cemetery"
+    },
+    "relation": "interred_here",
+    "expected_answer": "Edward Lansdale",
+    "tried_predicates": [
+      "people.place_of_interment.interred_here"
+    ],
+    "tried_answers": {
+      "people.place_of_interment.interred_here": [
+        "Clyde Edward Pangborn",
+        "George C. Scott",
+        "Arthur M. Ferguson",
+        "John Henry Towers",
+        "William Kelly Harrison, Jr.",
+        "Robert B. McClure",
+        "Kenneth J. Hodson",
+        "James J. Raby",
+        "Alan Louis Eggers",
+        "John Daly"
+      ]
+    }
+  },
+  {
+    "id": "QA-909",
+    "question": "what japanese album is compilation album",
+    "topic_entity": {
+      "m.02jbfk": "Compilation album"
+    },
+    "relation": "albums",
+    "expected_answer": "Like in Bodukan - Tokyo",
+    "tried_predicates": [
+      "music.genre.albums",
+      "music.album_content_type.albums"
+    ],
+    "tried_answers": {
+      "music.genre.albums": [
+        "In the Mind of Jamie Cullum",
+        "Divas En Espa\u00f1ol",
+        "Jackpot! The Best Bette",
+        "Les Clips Vol. II",
+        "7aum Arivu",
+        "The Final",
+        "L'Autre",
+        "Music Videos I",
+        "Past Present",
+        "French Kiss 2"
+      ],
+      "music.album_content_type.albums": [
+        "Big Day Out 05",
+        "THE BEST OF KOEI Vol. 2",
+        "Music for the Advancement of Hip Hop",
+        "Six Suites for Unaccompanied Cello",
+        "The Sky Is Crying",
+        "Torino Boys",
+        "M\u00e1s que alcanzar una estrella",
+        "White Nights",
+        "Sorry 4 the Wait",
+        "From Kuno to Kebyar: Balinese Gamelan Angklung"
+      ]
+    }
+  },
+  {
+    "id": "QA-913",
+    "question": "which artist plays rock music?",
+    "topic_entity": {
+      "m.06by7": "Rock music"
+    },
+    "relation": "artists",
+    "expected_answer": "De H\u00fbnekop",
+    "tried_predicates": [
+      "music.genre.artists"
+    ],
+    "tried_answers": {
+      "music.genre.artists": [
+        "Glen Matlock",
+        "Godsmack",
+        "Liam Gallagher",
+        "P.O.D.",
+        "Agent 51",
+        "Roger Nichols",
+        "Dr. John",
+        "Nielson/Pearson Band",
+        "Paula Cole",
+        "Jason Perry"
+      ]
+    }
+  },
+  {
+    "id": "QA-917",
+    "question": "bob dylan wrote lyrics to what popular song",
+    "topic_entity": {
+      "m.01vrncs": "Bob Dylan"
+    },
+    "relation": "lyrics_written",
+    "expected_answer": "Mama, You Been on My Mind",
+    "tried_predicates": [
+      "music.lyricist.lyrics_written"
+    ],
+    "tried_answers": {
+      "music.lyricist.lyrics_written": [
+        "I Want You",
+        "It Ain't Me Babe",
+        "It's Alright, Ma (I'm Only Bleeding)",
+        "Golden Loom",
+        "Maggie's Farm",
+        "Dignity",
+        "Rita May",
+        "I'll Be Your Baby Tonight",
+        "Ballad of a Thin Man",
+        "Catfish"
+      ]
+    }
+  },
+  {
+    "id": "QA-923",
+    "question": "Name a restaurant that serves american food?",
+    "topic_entity": {
+      "m.01z1jf2": "American food"
+    },
+    "relation": "restaurant",
+    "expected_answer": "Del Frisco's Double Eagle Steak House",
+    "tried_predicates": [
+      "dining.cuisine.restaurant"
+    ],
+    "tried_answers": {
+      "dining.cuisine.restaurant": [
+        "Logan's Roadhouse",
+        "Kennedy Fried Chicken",
+        "Wendy's",
+        "T.G.I. Friday's",
+        "Friendly's",
+        "Jack in the Box",
+        "Momofuku Ss\u00e4m Bar",
+        "Slots-A-Fun Casino",
+        "Home Restaurant",
+        "Kudzu"
+      ]
+    }
+  },
+  {
+    "id": "QA-924",
+    "question": "what city is municipality located in brazil",
+    "topic_entity": {
+      "m.015fr": "Brazil"
+    },
+    "relation": "second_level_divisions",
+    "expected_answer": "Nossa Senhora de Lourdes",
+    "tried_predicates": [],
+    "tried_answers": {}
+  },
+  {
+    "id": "QA-952",
+    "question": "what is a song by jesse saunders",
+    "topic_entity": {
+      "m.03cswqd": "Jesse Saunders"
+    },
+    "relation": "track",
+    "expected_answer": "Fantasy",
+    "tried_predicates": [
+      "music.artist.track"
+    ],
+    "tried_answers": {
+      "music.artist.track": [
+        "Funk You Up (club mix)",
+        "Take Me Higher",
+        "Love Can't Turn Around",
+        "Intro",
+        "Move Yo Booty",
+        "Funk You Up",
+        "It's O.K. '97",
+        "Funk You Up (vocal)",
+        "Funk You Up (edit)",
+        "Yeah"
+      ]
+    }
+  },
+  {
+    "id": "QA-956",
+    "question": "What's an example of an album",
+    "topic_entity": {
+      "m.02lx2r": "Album"
+    },
+    "relation": "albums",
+    "expected_answer": "Guys and Dolls (1950 Original Broadway Cast)",
+    "tried_predicates": [
+      "music.album_release_type.albums"
+    ],
+    "tried_answers": {
+      "music.album_release_type.albums": [
+        "Symphonic Suite Yamato",
+        "No Shame",
+        "Big Day Out 05",
+        "THE BEST OF KOEI Vol. 2",
+        "Music for the Advancement of Hip Hop",
+        "Guero",
+        "Schindler's List",
+        "Crash",
+        "Two Against Nature",
+        "The Broadway Album"
+      ]
+    }
+  },
+  {
+    "id": "QA-961",
+    "question": "what artist plays in the indie genre",
+    "topic_entity": {
+      "m.05rwpb": "Independent music"
+    },
+    "relation": "artists",
+    "expected_answer": "Elephant Micah",
+    "tried_predicates": [
+      "music.genre.artists"
+    ],
+    "tried_answers": {
+      "music.genre.artists": [
+        "Thieves Like Us",
+        "Sarah Jaffe",
+        "Dum Dum Girls",
+        "Ed Sheeran",
+        "Scrawl",
+        "Inara George",
+        "Bohren & der Club of Gore",
+        "Iyaz",
+        "Annabelle Chvostek",
+        "The Romany Rye"
+      ]
+    }
+  },
+  {
+    "id": "QA-962",
+    "question": "Who is an artist that is signed to the record label universal music group",
+    "topic_entity": {
+      "m.01dtcb": "Universal Music Group"
+    },
+    "relation": "artist",
+    "expected_answer": "SADS",
+    "tried_predicates": [
+      "music.record_label.artist"
+    ],
+    "tried_answers": {
+      "music.record_label.artist": [
+        "Paula Cole",
+        "Avant",
+        "Terry Callier",
+        "12 Stones",
+        "Chenoa",
+        "Magtens Korridorer",
+        "Kaya",
+        "Lisa Loeb",
+        "Svoy",
+        "Limblifter"
+      ]
+    }
+  },
+  {
+    "id": "QA-975",
+    "question": "what are single-player games",
+    "topic_entity": {
+      "m.02hjn4": "Single-player video game"
+    },
+    "relation": "games_with_this_mode",
+    "expected_answer": "LostWinds 2: Winter of the Melodias",
+    "tried_predicates": [
+      "cvg.gameplay_mode.games_with_this_mode"
+    ],
+    "tried_answers": {
+      "cvg.gameplay_mode.games_with_this_mode": [
+        "Rugby League 2: World Cup Edition",
+        "Cave Story",
+        "Voxeliens",
+        "Gua-Le-Ni; or, The Horrendous Parade",
+        "Sam & Max: Abe Lincoln Must Die!",
+        "Marine Park Empire",
+        "Mario Kart Wii",
+        "F1 2009",
+        "Angry Birds",
+        "Nancy Drew: The Secret of Shadow Ranch"
+      ]
+    }
+  }
+]

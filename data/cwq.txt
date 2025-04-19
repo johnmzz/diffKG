@@ -1,0 +1,23 @@
+🔍 Checking topic entity labels...
+🔍 Checking answer entity via SPARQL query...
+
+📊 Topic Entity Validation Summary
+Total QA pairs: 3531
+Total Topic Entities Checked: 5135
+✅ Matched: 5135
+❌ Failed: 0
+
+📈 Topic / Answer Count Stats
+🔹 Topic entity = 1 : 2014
+🔸 Topic entity > 1 : 1506
+🔻 Topic entity > 2 : 109
+🔹 Answer entity = 1 : 3531
+🔸 Answer entity > 1 : 0
+⚠️  Both topic & answer > 1 : 0
+
+📊 Answer Entity Match Stats
+Total SPARQL answer queries: 3531
+✅ Answer matched: 3531
+❌ Answer mismatched: 0
+
+📁 Mismatches saved to mismatch_report.json

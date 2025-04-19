@@ -1,0 +1,590 @@
+[
+  {
+    "url": "http://www.freebase.com/view/en/kansas_city_kansas",
+    "question": "what county is kansas city kansas?",
+    "answers": [
+      "Wyandotte County"
+    ],
+    "topic_entity": {
+      "m.0tcj6": "Kansas City",
+      "m.04fdkj": "Kansas Speedway"
+    },
+    "qid_topic_entity": {
+      "Q486472": "Kansas City",
+      "Q1723946": "Kansas Speedway"
+    },
+    "real_answers": {
+      "m.0nnyr": {
+        "label": "Wyandotte County",
+        "relation": "location.location.containedby"
+      }
+    }
+  },
+  {
+    "url": "http://www.freebase.com/view/en/russia",
+    "question": "where does russia import from?",
+    "answers": [
+      "Uzbekistan"
+    ],
+    "topic_entity": {
+      "m.06bnz": "Russia",
+      "m.07t21": "Ukraine"
+    },
+    "qid_topic_entity": {
+      "Q159": "Russia",
+      "Q212": "Ukraine"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/donnie_wahlberg",
+    "question": "who does donnie wahlberg play in the sixth sense?",
+    "answers": [
+      "Vincent Grey"
+    ],
+    "topic_entity": {
+      "m.02stwg": "Donnie Wahlberg",
+      "m.07j94": "The Sixth Sense"
+    },
+    "qid_topic_entity": {
+      "Q313470": "Donnie Wahlberg",
+      "Q183063": "The Sixth Sense"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/joey_jordison",
+    "question": "what does joey jordison play in slipknot?",
+    "answers": [
+      "Drums"
+    ],
+    "topic_entity": {
+      "m.01wt4wc": "Joey Jordison",
+      "m.0ntq7": "Slipknot"
+    },
+    "qid_topic_entity": {
+      "Q295817": "Joey Jordison",
+      "Q254138": "Slipknot"
+    },
+    "real_answers": {
+      "m.026t6": {
+        "label": "Drums",
+        "relation": "music.group_member.instruments_played"
+      }
+    }
+  },
+  {
+    "url": "http://www.freebase.com/view/en/winona_ryder",
+    "question": "what part did winona ryder play in star trek?",
+    "answers": [
+      "Amanda Grayson"
+    ],
+    "topic_entity": {
+      "m.086sj": "Winona Ryder",
+      "m.08phg9": "Star Trek"
+    },
+    "qid_topic_entity": {
+      "Q101797": "Winona Ryder",
+      "Q213081": "Star Trek"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/jacob_black",
+    "question": "who played jacob black in twilight?",
+    "answers": [
+      "Taylor Lautner"
+    ],
+    "topic_entity": {
+      "m.03nm_fh": "Twilight",
+      "m.02qd_td": "Jacob Black"
+    },
+    "qid_topic_entity": {
+      "Q160071": "Twilight",
+      "Q716835": "Jacob Black"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/chuck_bass",
+    "question": "who plays chuck bass in gossip girl?",
+    "answers": [
+      "Ed Westwick"
+    ],
+    "topic_entity": {
+      "m.0g0jx7": "Chuck Bass",
+      "m.0gfzgl": "Gossip Girl"
+    },
+    "qid_topic_entity": {
+      "Q2336506": "Chuck Bass",
+      "Q199853": "Gossip Girl"
+    },
+    "real_answers": {
+      "m.02w4x29": {
+        "label": "Ed Westwick",
+        "relation": "base.gossipgirl.character.played_by"
+      }
+    }
+  },
+  {
+    "url": "http://www.freebase.com/view/en/selena_gomez",
+    "question": "who was selena gomez in barney and friends?",
+    "answers": [
+      "Gianna"
+    ],
+    "topic_entity": {
+      "m.0gs6vr": "Selena Gomez",
+      "m.01f4yy": "Barney & Friends"
+    },
+    "qid_topic_entity": {
+      "Q83287": "Selena Gomez",
+      "Q213588": "Barney & Friends"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/michael_keaton",
+    "question": "who does michael keaton play in cars?",
+    "answers": [
+      "Chick Hicks"
+    ],
+    "topic_entity": {
+      "m.01j5ws": "Michael Keaton",
+      "m.03q0r1": "Cars"
+    },
+    "qid_topic_entity": {
+      "Q138005": "Michael Keaton",
+      "Q182153": "Cars"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/jeff_conaway",
+    "question": "what part did jeff conaway play in grease?",
+    "answers": [
+      "Kenickie Murdoch"
+    ],
+    "topic_entity": {
+      "m.026mzh": "Jeff Conaway",
+      "m.01xlqd": "Grease"
+    },
+    "qid_topic_entity": {
+      "Q342612": "Jeff Conaway",
+      "Q267721": "Grease"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/england",
+    "question": "what currency does england use now?",
+    "answers": [
+      "UK £"
+    ],
+    "topic_entity": {
+      "m.02jx1": "England",
+      "m.07ssc": "United Kingdom"
+    },
+    "qid_topic_entity": {
+      "Q21": "England",
+      "Q145": "United Kingdom"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/amy_stiller",
+    "question": "who does amy stiller play in dodgeball?",
+    "answers": [
+      "Keno Waitress"
+    ],
+    "topic_entity": {
+      "m.0194r1": "Amy Stiller",
+      "m.034qrh": "DodgeBall: A True Underdog Story"
+    },
+    "qid_topic_entity": {
+      "Q443128": "Amy Stiller",
+      "Q908473": "DodgeBall: A True Underdog Story"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/viggo_mortensen",
+    "question": "who did viggo mortensen play in lord of the rings?",
+    "answers": [
+      "Aragorn"
+    ],
+    "topic_entity": {
+      "m.01ps2h8": "Viggo Mortensen",
+      "m.017gl1": "The Lord of the Rings: The Fellowship of the Ring",
+      "m.017jd9": "The Lord of the Rings: The Return of the King"
+    },
+    "qid_topic_entity": {
+      "Q171363": "Viggo Mortensen",
+      "Q127367": "The Lord of the Rings: The Fellowship of the Ring",
+      "Q131074": "The Lord of the Rings: The Return of the King"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/san_diego",
+    "question": "what county is san diego in?",
+    "answers": [
+      "San Diego County"
+    ],
+    "topic_entity": {
+      "m.071vr": "San Diego",
+      "m.01n2wc": "San Diego International Airport"
+    },
+    "qid_topic_entity": {
+      "Q16552": "San Diego",
+      "Q1333923": "San Diego International Airport"
+    },
+    "real_answers": {
+      "m.0l2rj": {
+        "label": "San Diego County",
+        "relation": "location.location.containedby"
+      }
+    }
+  },
+  {
+    "url": "http://www.freebase.com/view/en/johnny_depp",
+    "question": "who did johnny depp play in corpse bride?",
+    "answers": [
+      "Victor Van Dort"
+    ],
+    "topic_entity": {
+      "m.0jfx1": "Johnny Depp",
+      "m.050xxm": "Corpse Bride"
+    },
+    "qid_topic_entity": {
+      "Q37175": "Johnny Depp",
+      "Q164417": "Corpse Bride"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/kauai",
+    "question": "what is the current time in kauai hawaii?",
+    "answers": [
+      "Hawaii–Aleutian Time Zone",
+      "UTC−10:00"
+    ],
+    "topic_entity": {
+      "m.03gh4": "Hawaii",
+      "m.014wxc": "Hawaiian Islands",
+      "m.0jbsn": "Kauai",
+      "m.0lmg4": "Kauai County",
+      "m.0jbt3": "Hawaii"
+    },
+    "qid_topic_entity": {
+      "Q782": "Hawaii",
+      "Q192626": "Hawaiian Islands",
+      "Q201026": "Kauai",
+      "Q111517": "Kauai County",
+      "Q68740": "Hawaii"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/bilbo_baggins",
+    "question": "who played bilbo in the fellowship of the ring?",
+    "answers": [
+      "Ian Holm"
+    ],
+    "topic_entity": {
+      "m.017gl1": "The Lord of the Rings: The Fellowship of the Ring",
+      "m.0g6z1": "Old Bilbo"
+    },
+    "qid_topic_entity": {
+      "Q127367": "The Lord of the Rings: The Fellowship of the Ring",
+      "Q185737": "Old Bilbo"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/tom_hanks",
+    "question": "who did tom hanks play in apollo 13?",
+    "answers": [
+      "Jim Lovell"
+    ],
+    "topic_entity": {
+      "m.0bxtg": "Tom Hanks",
+      "m.011yd2": "Apollo 13"
+    },
+    "qid_topic_entity": {
+      "Q2263": "Tom Hanks",
+      "Q106428": "Apollo 13"
+    },
+    "real_answers": {
+      "m.01yj3s": {
+        "label": "Jim Lovell",
+        "relation": "film.film.story_by"
+      }
+    }
+  },
+  {
+    "url": "http://www.freebase.com/view/en/utah",
+    "question": "what is utah's state capitol?",
+    "answers": [
+      "Salt Lake City"
+    ],
+    "topic_entity": {
+      "m.09b86q": "Utah State Capitol",
+      "m.07srw": "Utah"
+    },
+    "qid_topic_entity": {
+      "Q2627661": "Utah State Capitol",
+      "Q829": "Utah"
+    },
+    "real_answers": {
+      "m.0f2r6": {
+        "label": "Salt Lake City",
+        "relation": "location.location.contains"
+      }
+    }
+  },
+  {
+    "url": "http://www.freebase.com/view/en/woody_harrelson",
+    "question": "who did woody harrelson play on cheers?",
+    "answers": [
+      "Woody Boyd"
+    ],
+    "topic_entity": {
+      "m.0170s4": "Woody Harrelson",
+      "m.01s81": "Cheers"
+    },
+    "qid_topic_entity": {
+      "Q201279": "Woody Harrelson",
+      "Q732063": "Cheers"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/west_midlands",
+    "question": "what places are in the west midlands?",
+    "answers": [
+      "Metropolitan Borough of Solihull",
+      "Sandwell",
+      "Turners Hill, West Midlands",
+      "Walsall",
+      "Coventry",
+      "Allesley",
+      "Metropolitan Borough of Walsall",
+      "Barr Beacon",
+      "West Bromwich",
+      "Metropolitan Borough of Dudley"
+    ],
+    "topic_entity": {
+      "m.0dyjz": "West Midlands",
+      "m.01z8x0": "West Midlands"
+    },
+    "qid_topic_entity": {
+      "Q23124": "West Midlands",
+      "Q48038": "West Midlands"
+    },
+    "real_answers": {
+      "m.01ycxx": {
+        "label": "Sandwell",
+        "relation": "location.location.contains"
+      },
+      "m.0c5_3": {
+        "label": "Coventry",
+        "relation": "location.location.contains"
+      },
+      "m.01n244": {
+        "label": "West Bromwich",
+        "relation": "location.location.contains"
+      },
+      "m.01m4pc": {
+        "label": "Walsall",
+        "relation": "location.location.contains"
+      },
+      "m.02z8_s": {
+        "label": "Metropolitan Borough of Solihull",
+        "relation": "location.location.contains"
+      },
+      "m.0257kt": {
+        "label": "Metropolitan Borough of Dudley",
+        "relation": "location.location.contains"
+      },
+      "m.08rzd1": {
+        "label": "Allesley",
+        "relation": "location.location.contains"
+      },
+      "m.02j17x": {
+        "label": "Metropolitan Borough of Walsall",
+        "relation": "location.location.contains"
+      },
+      "m.0bzbk3": {
+        "label": "Turners Hill, West Midlands",
+        "relation": "location.location.contains"
+      },
+      "m.0377rp": {
+        "label": "Barr Beacon",
+        "relation": "location.location.contains"
+      }
+    }
+  },
+  {
+    "url": "http://www.freebase.com/view/en/darth_vader",
+    "question": "who plays anakin skywalker in star wars 1?",
+    "answers": [
+      "Jake Lloyd"
+    ],
+    "topic_entity": {
+      "m.0ddt_": "Star Wars Episode I: The Phantom Menace",
+      "m.0f2y0": "Darth Vader"
+    },
+    "qid_topic_entity": {
+      "Q165713": "Star Wars Episode I: The Phantom Menace",
+      "Q51752": "Darth Vader"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/hawaii",
+    "question": "what ocean is around hawaii?",
+    "answers": [
+      "Pacific Ocean"
+    ],
+    "topic_entity": {
+      "m.0jbt3": "Hawaii",
+      "m.03gh4": "Hawaii"
+    },
+    "qid_topic_entity": {
+      "Q68740": "Hawaii",
+      "Q782": "Hawaii"
+    },
+    "real_answers": {
+      "m.05rgl": {
+        "label": "Pacific Ocean",
+        "relation": "location.location.containedby"
+      }
+    }
+  },
+  {
+    "url": "http://www.freebase.com/view/en/tunis",
+    "question": "where is tunis on a map?",
+    "answers": [
+      "Tunisia",
+      "Africa",
+      "Tunis Governorate"
+    ],
+    "topic_entity": {
+      "m.07fj_": "Tunisia",
+      "m.0ftn8": "Tunis"
+    },
+    "qid_topic_entity": {
+      "Q948": "Tunisia",
+      "Q3572": "Tunis"
+    },
+    "real_answers": {
+      "m.0cyb_z": {
+        "label": "Tunis Governorate",
+        "relation": "location.location.containedby"
+      },
+      "m.0dg3n1": {
+        "label": "Africa",
+        "relation": "location.location.containedby"
+      },
+      "m.07fj_": {
+        "label": "Tunisia",
+        "relation": "location.location.containedby"
+      }
+    }
+  },
+  {
+    "url": "http://www.freebase.com/view/en/russians",
+    "question": "what language do russians speak?",
+    "answers": [
+      "Russian Language"
+    ],
+    "topic_entity": {
+      "m.06bnz": "Russia",
+      "m.0g6ff": "Russian"
+    },
+    "qid_topic_entity": {
+      "Q159": "Russia",
+      "Q49542": "Russian"
+    },
+    "real_answers": {
+      "m.06b_j": {
+        "label": "Russian Language",
+        "relation": "location.country.languages_spoken"
+      }
+    }
+  },
+  {
+    "url": "http://www.freebase.com/view/en/alyson_stoner",
+    "question": "who does alyson stoner play in camp rock?",
+    "answers": [
+      "Caitlyn Gellar"
+    ],
+    "topic_entity": {
+      "m.02bwjv": "Alyson Stoner",
+      "m.02w4by3": "Camp Rock"
+    },
+    "qid_topic_entity": {
+      "Q229263": "Alyson Stoner",
+      "Q217250": "Camp Rock"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/babylonia",
+    "question": "what language did the ancient babylonians speak?",
+    "answers": [
+      "Akkadian language"
+    ],
+    "topic_entity": {
+      "m.0cn3b": "Babylonia",
+      "m.01cyh": "Babylon"
+    },
+    "qid_topic_entity": {
+      "Q47690": "Babylonia",
+      "Q5684": "Babylon"
+    },
+    "real_answers": {
+      "m.0dc0d": {
+        "label": "Akkadian language",
+        "relation": "location.country.official_language"
+      }
+    }
+  },
+  {
+    "url": "http://www.freebase.com/view/en/stanley_kowalski",
+    "question": "who played stanley kowalski in a streetcar named desire movie?",
+    "answers": [
+      "Marlon Brando"
+    ],
+    "topic_entity": {
+      "m.097zcz": "A Streetcar Named Desire",
+      "m.03bhwh": "Stanley Kowalski"
+    },
+    "qid_topic_entity": {
+      "Q212129": "A Streetcar Named Desire",
+      "Q3496842": "Stanley Kowalski"
+    },
+    "real_answers": {}
+  },
+  {
+    "url": "http://www.freebase.com/view/en/serbs",
+    "question": "what language do serbs speak?",
+    "answers": [
+      "Serbian language"
+    ],
+    "topic_entity": {
+      "m.077qn": "Serbia",
+      "m.0g6g7": "Serbs"
+    },
+    "qid_topic_entity": {
+      "Q403": "Serbia",
+      "Q127885": "Serbs"
+    },
+    "real_answers": {
+      "m.0k0sb": {
+        "label": "Serbian language",
+        "relation": "location.country.official_language"
+      }
+    }
+  }
+]

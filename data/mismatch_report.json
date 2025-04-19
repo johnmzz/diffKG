@@ -1,0 +1,34 @@
+[
+  {
+    "type": "answer_entity",
+    "qid": "WebQTest-1234_279eccdaed54f8d3746c5897f5d30c51",
+    "question": "What business did the person who designed Plum Orchard excel in?",
+    "expected": {},
+    "predicted_mid": null,
+    "predicted_label": null
+  },
+  {
+    "type": "answer_entity",
+    "qid": "WebQTest-1234_30d15cd8eab212bd2dc808a29bc6dc27",
+    "question": "What business did the person who stated \"All honor's wounds are self-inflicted\" head?",
+    "expected": {},
+    "predicted_mid": null,
+    "predicted_label": null
+  },
+  {
+    "type": "answer_entity",
+    "qid": "WebQTest-1234_840083e6d7f8b9c24c7893c2fa6c203a",
+    "question": "The person who said \"I would as soon leave my son a curse as the almighty dollar\" was in what business?",
+    "expected": {},
+    "predicted_mid": null,
+    "predicted_label": null
+  },
+  {
+    "type": "answer_entity",
+    "qid": "WebQTest-1234_5d4f19710445c6dcee021e0282b06e1d",
+    "question": "What business was the person who designed Edgar Thomson Steel Works proficient in?",
+    "expected": {},
+    "predicted_mid": null,
+    "predicted_label": null
+  }
+]

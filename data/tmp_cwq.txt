@@ -1,0 +1,379 @@
+
+📊 所有 SPARQL 跳数分布:
+🔹 2-hop: 1119 条
+🔹 3-hop: 1294 条
+🔹 4-hop: 634 条
+🔹 5-hop: 288 条
+🔹 6-hop: 94 条
+🔹 7-hop: 97 条
+🔹 8-hop: 4 条
+🔹 10-hop: 1 条
+
+📌 每个 hop 示例及变量绑定:
+
+
+🔸 2-hop 示例:
+  🟢 Question: What type of government is used in the country with Northern District?
+     ➤ ?c ns:location.country.administrative_divisions ns:m.01vz6b (Northern District) .
+     ➤ ?c ns:location.country.form_of_government ?x .
+        └ ?c = m.03spz (Israel)
+        └ ?x = m.018wl5 (Parliamentary system)
+  🟢 Question: The people from the country that contains Nord-Ouest Department speak what languages today?
+     ➤ ?c ns:location.country.administrative_divisions ns:m.02g__4 (Nord-Ouest Department) .
+     ➤ ?c ns:location.country.languages_spoken ?x .
+        └ ?c = m.03gyl (Haiti)
+        └ ?x = m.064_8sq (French)
+        └ ?x = m.02dhwl (Haitian Creole)
+  🟢 Question: What year did the basketball team coached by Brad Stevens win the championship?
+     ➤ ?c ns:basketball.basketball_team.head_coach ns:m.02qwvmq (Brad Stevens) .
+     ➤ ?c ns:sports.sports_team.championships ?x .
+        └ ?c = m.0bwjj (Boston Celtics)
+        └ ?x = m.08x9zw (1981 NBA Finals)
+        └ ?x = m.08x9wd (1986 NBA Finals)
+        └ ?x = m.08dxfs (1969 NBA Finals)
+        └ ?x = m.09l8zn (1976 NBA Finals)
+        └ ?x = m.0cs1gb (1974 NBA Finals)
+  🟢 Question: Which globe region with the UTCâ05:00 time zone does the Dominican Republic call home?
+     ➤ ns:m.027rn (Dominican Republic) ns:location.location.containedby ?x .
+     ➤ ?x ns:location.location.time_zones ns:m.02_37z (UTC−05:00) .
+        └ ?x = m.01rll_ (Greater Antilles)
+  🟢 Question: What was the name of the team that won the 2008 FIFA Club World Cup Final championship?
+     ➤ ?c ns:sports.sports_team.championships ns:m.053nq3y (2008 FIFA Club World Cup Final) .
+     ➤ ?c ns:sports.sports_team.previously_known_as ?x .
+        └ ?c = m.050fh (Manchester United F.C.)
+        └ ?x = m.05l1ffz (Newton Heath L&YR F.C.)
+
+🔸 3-hop 示例:
+  🟢 Question: Lou Seal is the mascot for the team that last won the World Series when?
+     ➤ ?c ns:sports.sports_team.team_mascot ns:m.03_dwn (Lou Seal) .
+     ➤ ?c ns:sports.sports_team.championships ?x .
+     ➤ ?x ns:time.event.start_date ?sk0 .
+        └ ?c = m.0713r (San Francisco Giants)
+        └ ?x = m.0117q3yz (2014 World Series)
+  🟢 Question: Which nation has the Alta Verapaz Department and is in Central America?
+     ➤ ns:m.01tzh (Central America) ns:location.location.contains ?x .
+     ➤ ?x ns:common.topic.notable_types ns:m.01mp (Country) .
+     ➤ ?x ns:location.country.administrative_divisions ns:m.0146np (Alta Verapaz Department) .
+        └ ?x = m.0345_ (Guatemala)
+  🟢 Question: What educational institution has a football sports team named Northern Colorado Bears is in Greeley, Colorado?
+     ➤ ns:m.0rczx (Greeley) ns:location.location.contains ?x .
+     ➤ ?x ns:common.topic.notable_types ns:m.01y2hnl (College/University) .
+     ➤ ?x ns:education.educational_institution.sports_teams ns:m.0lqj7vt (Northern Colorado Bears football) .
+        └ ?x = m.01_k7f (University of Northern Colorado)
+  🟢 Question: What language is spoken in the location that appointed Michelle Bachelet to a governmental position speak?
+     ➤ ?c ns:government.governmental_jurisdiction.governing_officials ?k .
+     ➤ ?k ns:government.government_position_held.appointed_by ns:m.03wws_ (Michelle Bachelet) .
+     ➤ ?c ns:location.country.languages_spoken ?x .
+        └ ?c = m.01p1v (Chile)
+        └ ?k = m.0104wly0 (UNKNOWN, type = government.government_position_held)
+        └ ?k = m.01076mz_ (UNKNOWN, type = government.government_position_held)
+        └ ?x = m.06nm1 (Spanish Language)
+        └ ?x = m.0565hv (Rapa Nui Language)
+        └ ?x = m.01zn1j (Mapudungun Language)
+        └ ?x = m.01y5tq (Aymara language)
+        └ ?x = m.09_sxt (Puquina Language)
+  🟢 Question: In which countries do the people speak Portuguese, where the child labor percentage was once 1.8?
+     ➤ ns:m.05zjd (Portuguese Language) ns:language.human_language.countries_spoken_in ?x .
+     ➤ ?x ns:location.statistical_region.child_labor_percent ?c .
+     ➤ ?c ns:measurement_unit.dated_percentage.rate "1.8" .
+        └ ?c = g.1hhc52mpr (UNKNOWN, type = measurement_unit.dated_percentage)
+        └ ?x = m.04wlh (Mozambique)
+
+🔸 4-hop 示例:
+  🟢 Question: The national anthem Afghan National Anthem is from the country which practices what religions?
+     ➤ ?c ns:location.country.national_anthem ?k .
+     ➤ ?k ns:government.national_anthem_of_a_country.anthem ns:m.02r0hl7 (Afghan National Anthem) .
+     ➤ ?c ns:location.statistical_region.religions ?y .
+     ➤ ?y ns:location.religion_percentage.religion ?x .
+        └ ?c = m.0jdd (Afghanistan)
+        └ ?k = m.0h_1ft4 (UNKNOWN, type = government.national_anthem_of_a_country)
+        └ ?x = m.078tg (Sunni Islam)
+        └ ?x = m.06pq6 (Shia Islam)
+        └ ?y = m.0493b56 (UNKNOWN, type = location.religion_percentage)
+        └ ?y = m.0493b5d (UNKNOWN, type = location.religion_percentage)
+  🟢 Question: What European Union country sharing borders with Germany contains the Lejre Municipality?
+     ➤ ns:m.0345h (Germany) ns:location.location.adjoin_s ?y .
+     ➤ ?y ns:location.adjoining_relationship.adjoins ?x .
+     ➤ ?x ns:common.topic.notable_types ns:m.01mp (Country) .
+     ➤ ?x ns:location.country.administrative_divisions ns:m.010v_j8w (Lejre Municipality) .
+        └ ?x = m.0k6nt (Denmark)
+        └ ?y = m.02wrxld (UNKNOWN, type = location.adjoining_relationship)
+  🟢 Question: When was the last time a team led by Larr Baer win the World Series?
+     ➤ ?c ns:organization.organization.leadership ?k .
+     ➤ ?k ns:organization.leadership.person ns:m.0hhv_6h (Larry Baer) .
+     ➤ ?c ns:sports.sports_team.championships ?x .
+     ➤ ?x ns:time.event.start_date ?sk0 .
+        └ ?c = m.0713r (San Francisco Giants)
+        └ ?k = m.011zsc4_ (UNKNOWN, type = organization.leadership)
+        └ ?x = m.0117q3yz (2014 World Series)
+  🟢 Question: Which country that is situated in the ASEAN Common Time Zone has the largest population?
+     ➤ ?c ns:location.location.time_zones ns:m.0bzt6c (ASEAN Common Time Zone) .
+     ➤ ?c ns:location.location.contains ?x .
+     ➤ ?x ns:common.topic.notable_types ns:m.01mp (Country) .
+     ➤ ?x ns:topic_server.population_number ?sk0 .
+        └ ?c = m.0j0k (Asia)
+        └ ?x = m.0d05w3 (China)
+  🟢 Question: WHat movies have the actress who is an alumni for West Reading El Ctr a part of?
+     ➤ ?c ns:people.person.education ?k .
+     ➤ ?k ns:education.education.institution ns:m.076czr3 (West Reading El Ctr) .
+     ➤ ?c ns:film.actor.film ?y .
+     ➤ ?y ns:film.performance.film ?x .
+        └ ?c = m.0dl567 (Taylor Swift)
+        └ ?k = m.0ycxbfr (UNKNOWN, type = education.education)
+        └ ?x = m.02x3lt7 (Hannah Montana: The Movie)
+        └ ?x = m.0djb8hx (Jonas Brothers: The Concert Experience)
+        └ ?x = m.087wc7n (The Lorax)
+        └ ?x = m.06_wqk4 (Valentine's Day)
+        └ ?x = m.0dx5q8 (The Giver)
+        └ ?y = m.0y4q1x7 (UNKNOWN, type = film.performance)
+        └ ?y = m.0ysr8tn (UNKNOWN, type = film.performance)
+        └ ?y = m.09kkm44 (UNKNOWN, type = film.performance)
+        └ ?y = m.0gwnx7m (UNKNOWN, type = film.performance)
+        └ ?y = m.0znq0tb (UNKNOWN, type = film.performance)
+
+🔸 5-hop 示例:
+  🟢 Question: Where did the "Country Nation World Tour" concert artist go to college?
+     ➤ ?c ns:music.artist.concert_tours ns:m.010qhfmm (Country Nation World Tour) .
+     ➤ ?c ns:people.person.education ?y .
+     ➤ ?y ns:education.education.institution ?x .
+     ➤ ?x ns:common.topic.notable_types ns:m.01y2hnl (College/University) .
+     ➤ ?y ns:education.education.degree ns:m.019v9k (Bachelor's degree) .
+        └ ?c = m.03gr7w (Brad Paisley)
+        └ ?x = m.01qdhx (Belmont University)
+        └ ?y = m.0h3d7qj (UNKNOWN, type = education.education)
+  🟢 Question: What is the predominant religion where the leader is Ovadia Yosef?
+     ➤ ?c ns:religion.religious_leadership_jurisdiction.leader ?k .
+     ➤ ?k ns:religion.religious_organization_leadership.leader ns:m.02qmnw (Ovadia Yosef) .
+     ➤ ?c ns:location.statistical_region.religions ?y .
+     ➤ ?y ns:location.religion_percentage.religion ?x .
+     ➤ ?y ns:location.religion_percentage.percentage ?sk0 .
+        └ ?c = m.03spz (Israel)
+        └ ?k = m.048bcbz (UNKNOWN, type = religion.religious_organization_leadership)
+        └ ?x = m.03_gx (Judaism)
+        └ ?y = m.0468s5y (UNKNOWN, type = location.religion_percentage)
+  🟢 Question: What country bordering France contains an airport that serves Nijmegen?
+     ➤ ns:m.0f8l9c (France) ns:location.location.adjoin_s ?y .
+     ➤ ?y ns:location.adjoining_relationship.adjoins ?x .
+     ➤ ?x ns:common.topic.notable_types ns:m.01mp (Country) .
+     ➤ ?x ns:location.location.contains ?c .
+     ➤ ?c ns:aviation.airport.serves ns:m.05g2b (Nijmegen) .
+        └ ?c = m.06cm5d (Weeze Airport)
+        └ ?x = m.0345h (Germany)
+        └ ?y = m.02wrxl5 (UNKNOWN, type = location.adjoining_relationship)
+  🟢 Question: Which of JFK's brother held the latest governmental position?
+     ➤ ns:m.0d3k14 (John F. Kennedy) ns:people.person.sibling_s ?y .
+     ➤ ?y ns:people.sibling_relationship.sibling ?x .
+     ➤ ?x ns:people.person.gender ns:m.05zppz (Male) .
+     ➤ ?x ns:government.politician.government_positions_held ?c .
+     ➤ ?c ns:government.government_position_held.from ?num .
+        └ ?c = m.03nmyx1 (UNKNOWN, type = government.government_position_held)
+        └ ?x = m.06hx2 (Robert F. Kennedy)
+        └ ?y = m.03hs9fc (UNKNOWN, type = people.sibling_relationship)
+  🟢 Question: For what did the personage who was educated at the Dewitt High School win a gold medal?
+     ➤ ?c ns:people.person.education ?k .
+     ➤ ?k ns:education.education.institution ns:m.07635c3 (Dewitt High School) .
+     ➤ ?c ns:olympics.olympic_athlete.medals_won ?y .
+     ➤ ?y ns:olympics.olympic_medal_honor.event ?x .
+     ➤ ?y ns:olympics.olympic_medal_honor.medal ns:m.02lpp7 (Gold medal) .
+        └ ?c = m.05nzn7y (Jordyn Wieber)
+        └ ?k = m.0w5lr60 (UNKNOWN, type = education.education)
+        └ ?x = m.0h_f7xn (Gymnastics at the 2012 Summer Olympics – Women's artistic team all-around)
+        └ ?y = m.0kf9nbs (UNKNOWN, type = olympics.olympic_medal_honor)
+
+🔸 6-hop 示例:
+  🟢 Question: What actor played the a kid in the movie with a character named Jenny's Father?
+     ➤ ?c ns:film.film.starring ?k .
+     ➤ ?k ns:film.performance.character ns:m.0y54dn_ (Jenny's Father) .
+     ➤ ?c ns:film.film.starring ?y .
+     ➤ ?y ns:film.performance.actor ?x .
+     ➤ ?y ns:film.performance.character ns:m.0264f7h (Forrest Gump) .
+     ➤ ?y ns:film.performance.character_note ?sk0 .
+        └ ?c = m.0bdjd (Forrest Gump)
+        └ ?k = m.0y54dnx (UNKNOWN, type = film.performance)
+        └ ?x = m.02ptwkr (Michael Connor Humphreys)
+        └ ?y = m.02xgww5 (UNKNOWN, type = film.performance)
+  🟢 Question: Who holds the position of Prime Minister in the country which contains Dire Dawa?
+     ➤ ?c ns:location.country.administrative_divisions ns:m.04lj5y (Dire Dawa) .
+     ➤ ?c ns:government.governmental_jurisdiction.governing_officials ?y .
+     ➤ ?y ns:government.government_position_held.office_holder ?x .
+     ➤ ?y ns:government.government_position_held.basic_title ns:m.060bp (Prime minister) .
+     ➤ EXISTS {?y ns:government.government_position_held.from ?sk1 .
+     ➤ EXISTS {?y ns:government.government_position_held.to ?sk3 .
+        └ ?c = m.019pcs (Ethiopia)
+        └ ?x = m.0dl1t3 (Hailemariam Desalegn)
+        └ ?y = m.0n1nqyj (UNKNOWN, type = government.government_position_held)
+  🟢 Question: The person educated at Chase Lane Primary School played for what team in 2011?
+     ➤ ?c ns:people.person.education ?k .
+     ➤ ?k ns:education.education.institution ns:m.04dyl8y (Chase Lane Primary School) .
+     ➤ ?c ns:sports.pro_athlete.teams ?y .
+     ➤ ?y ns:sports.sports_team_roster.team ?x .
+     ➤ EXISTS {?y ns:sports.sports_team_roster.from ?sk1 .
+     ➤ EXISTS {?y ns:sports.sports_team_roster.to ?sk3 .
+        └ ?c = m.02d9k (David Beckham)
+        └ ?k = m.04dyl8v (UNKNOWN, type = education.education)
+        └ ?x = m.01k2yr (LA Galaxy)
+        └ ?y = m.02nr829 (UNKNOWN, type = sports.sports_team_roster)
+  🟢 Question: Who was the Arizona's Governor in 2009 who also suffered with Breast cancer?
+     ➤ ns:m.0vmt (Arizona) ns:government.governmental_jurisdiction.governing_officials ?y .
+     ➤ ?y ns:government.government_position_held.office_holder ?x .
+     ➤ ?y ns:government.government_position_held.basic_title ns:m.0fkvn (Governor) .
+     ➤ EXISTS {?y ns:government.government_position_held.from ?sk1 .
+     ➤ EXISTS {?y ns:government.government_position_held.to ?sk3 .
+     ➤ ?x ns:medicine.notable_person_with_medical_condition.condition ns:m.0j8hd (Breast cancer) .
+        └ ?x = m.01kf06 (Janet Napolitano)
+        └ ?y = m.04j8y5g (UNKNOWN, type = government.government_position_held)
+  🟢 Question: The capital of Cheyenne has who as governor of US state?
+     ➤ ?c ns:location.us_state.capital ns:m.0fw3f (Cheyenne) .
+     ➤ ?c ns:government.governmental_jurisdiction.governing_officials ?y .
+     ➤ ?y ns:government.government_position_held.office_holder ?x .
+     ➤ ?y ns:government.government_position_held.basic_title ns:m.0fkvn (Governor) .
+     ➤ EXISTS {?y ns:government.government_position_held.from ?sk1 .
+     ➤ EXISTS {?y ns:government.government_position_held.to ?sk3 .
+        └ ?c = m.0846v (Wyoming)
+        └ ?x = m.02rzfbm (Matt Mead)
+        └ ?y = m.0jskpkj (UNKNOWN, type = government.government_position_held)
+
+🔸 7-hop 示例:
+  🟢 Question: Which man is the leader of the country that uses Libya, Libya, Libya as its national anthem?
+     ➤ ?c ns:location.country.national_anthem ?k .
+     ➤ ?k ns:government.national_anthem_of_a_country.anthem ns:m.0gg95zf (Libya, Libya, Libya) .
+     ➤ ?c ns:government.governmental_jurisdiction.governing_officials ?y .
+     ➤ ?y ns:government.government_position_held.office_holder ?x .
+     ➤ ?y ns:government.government_position_held.office_position_or_title ns:m.0j5wjnc (Prime Minister of Libya) .
+     ➤ EXISTS {?y ns:government.government_position_held.from ?sk1 .
+     ➤ EXISTS {?y ns:government.government_position_held.to ?sk3 .
+        └ ?c = m.04gqr (Libya)
+        └ ?k = m.0h89drz (UNKNOWN, type = government.national_anthem_of_a_country)
+        └ ?k = m.0h89dsf (UNKNOWN, type = government.national_anthem_of_a_country)
+        └ ?x = m.0_ymzsm (Abdullah al-Thani)
+        └ ?y = m.011n4mp5 (UNKNOWN, type = government.government_position_held)
+  🟢 Question: Who was the governor of Arizona in 2009 that held his governmental position before 1998?
+     ➤ ns:m.0vmt (Arizona) ns:government.governmental_jurisdiction.governing_officials ?y .
+     ➤ ?y ns:government.government_position_held.office_holder ?x .
+     ➤ ?y ns:government.government_position_held.basic_title ns:m.0fkvn (Governor) .
+     ➤ EXISTS {?y ns:government.government_position_held.from ?sk1 .
+     ➤ EXISTS {?y ns:government.government_position_held.to ?sk3 .
+     ➤ ?x ns:government.politician.government_positions_held ?c .
+     ➤ ?c ns:government.government_position_held.from ?num .
+        └ ?c = m.0514fgf (UNKNOWN, type = government.government_position_held)
+        └ ?x = m.01kf06 (Janet Napolitano)
+        └ ?y = m.04j8y5g (UNKNOWN, type = government.government_position_held)
+  🟢 Question: Who was the governor of Ohio in 2011 that was in the government prior to 3-1-1983?
+     ➤ ns:m.05kkh (Ohio) ns:government.governmental_jurisdiction.governing_officials ?y .
+     ➤ ?y ns:government.government_position_held.office_holder ?x .
+     ➤ ?y ns:government.government_position_held.basic_title ns:m.0fkvn (Governor) .
+     ➤ EXISTS {?y ns:government.government_position_held.from ?sk1 .
+     ➤ EXISTS {?y ns:government.government_position_held.to ?sk3 .
+     ➤ ?x ns:government.politician.government_positions_held ?c .
+     ➤ ?c ns:government.government_position_held.from ?num .
+        └ ?c = m.0b_hgrs (UNKNOWN, type = government.government_position_held)
+        └ ?c = m.0bfmhy4 (UNKNOWN, type = government.government_position_held)
+        └ ?x = m.0340r0 (Return J. Meigs, Jr.)
+        └ ?x = m.02zzm_ (John Kasich)
+        └ ?y = m.0mth_2g (UNKNOWN, type = government.government_position_held)
+        └ ?y = m.0jshgq2 (UNKNOWN, type = government.government_position_held)
+  🟢 Question: Who was the US President during WW2 that held his government position from 3-4-1933?
+     ➤ ns:m.081pw (World War II) ns:time.event.start_date ?start ;
+     ➤ ns:time.event.end_date ?end .
+     ➤ ?x ns:government.politician.government_positions_held  ?y .
+     ➤ ?y ns:government.government_position_held.office_position_or_title ns:m.060d2 (President of the United States) ; # President of the United States
+     ➤ ns:government.government_position_held.from  ?from ;
+     ➤ ns:government.government_position_held.to  ?to .
+     ➤ ?c ns:government.government_position_held.from ?num .
+        └ ?c = m.03fx817 (UNKNOWN, type = government.government_position_held)
+        └ ?c = m.04j5vf7 (UNKNOWN, type = government.government_position_held)
+        └ ?c = m.04sgcgx (UNKNOWN, type = government.government_position_held)
+        └ ?x = m.09bg4l (Harry S. Truman)
+        └ ?y = m.03fx817 (UNKNOWN, type = government.government_position_held)
+  🟢 Question: Which was the earliest President during WW2 in the United States?
+     ➤ ns:m.081pw (World War II) ns:time.event.start_date ?start ;
+     ➤ ns:time.event.end_date ?end .
+     ➤ ?x ns:government.politician.government_positions_held  ?y .
+     ➤ ?y ns:government.government_position_held.office_position_or_title ns:m.060d2 (President of the United States) ; # President of the United States
+     ➤ ns:government.government_position_held.from  ?from ;
+     ➤ ns:government.government_position_held.to  ?to .
+     ➤ ?c ns:government.government_position_held.from ?num .
+        └ ?c = m.0b_p9hl (UNKNOWN, type = government.government_position_held)
+        └ ?x = m.02yy8 (Franklin D. Roosevelt)
+        └ ?y = m.03q2h_9 (UNKNOWN, type = government.government_position_held)
+
+🔸 8-hop 示例:
+  🟢 Question: What office did John Adams hold from May 10, 1775 before he was President?
+     ➤ ns:m.03_js (John Adams) ns:government.politician.government_positions_held ?p .
+     ➤ ?p ns:government.government_position_held.office_position_or_title ns:m.060d2 (President of the United States) .
+     ➤ ?p ns:government.government_position_held.from ?from .
+     ➤ ns:m.03_js (John Adams) ns:government.politician.government_positions_held ?y .
+     ➤ ?y ns:government.government_position_held.office_position_or_title ?x .
+     ➤ ?y ns:government.government_position_held.from ?z .
+     ➤ ?x ns:government.government_office_or_title.office_holders ?c .
+     ➤ ?c ns:government.government_position_held.from "1775-05-10"^^xsd:dateTime .
+        └ ?c = m.05723t9 (UNKNOWN, type = government.government_position_held)
+        └ ?c = m.0znyy7g (UNKNOWN, type = government.government_position_held)
+        └ ?p = m.04466xb (UNKNOWN, type = government.government_position_held)
+        └ ?x = m.09ryhrh (Delegate to the Continental Congress)
+        └ ?y = m.05723t9 (UNKNOWN, type = government.government_position_held)
+        └ ?y = m.09ryhrl (UNKNOWN, type = government.government_position_held)
+  🟢 Question: what did the man that said "Genius is sorrow's child."   do before he was president?
+     ➤ ?c ns:people.person.quotations ns:m.048jwrf (Genius is sorrow's child.) .
+     ➤ ?c ns:government.politician.government_positions_held ?p .
+     ➤ ?p ns:government.government_position_held.office_position_or_title ns:m.060d2 (President of the United States) .
+     ➤ ?p ns:government.government_position_held.from ?from .
+     ➤ ?c ns:people.person.quotations ns:m.048jwrf (Genius is sorrow's child.) .
+     ➤ ?c ns:government.politician.government_positions_held ?y .
+     ➤ ?y ns:government.government_position_held.office_position_or_title ?x .
+     ➤ ?y ns:government.government_position_held.from ?z .
+        └ ?c = m.03_js (John Adams)
+        └ ?p = m.04466xb (UNKNOWN, type = government.government_position_held)
+        └ ?x = m.03hrvl (United States Ambassador to the United Kingdom)
+        └ ?x = m.09ryhrh (Delegate to the Continental Congress)
+        └ ?x = m.02q_kt_ (United States Ambassador to the Netherlands)
+        └ ?x = m.080v2 (Vice President of the United States)
+        └ ?y = m.05723t9 (UNKNOWN, type = government.government_position_held)
+        └ ?y = m.04mm9px (UNKNOWN, type = government.government_position_held)
+        └ ?y = m.09ryhrl (UNKNOWN, type = government.government_position_held)
+        └ ?y = m.04mm9q4 (UNKNOWN, type = government.government_position_held)
+        └ ?y = m.04mm9r6 (UNKNOWN, type = government.government_position_held)
+  🟢 Question: What position was held from April 8, 1782 by John Adams before he was President?
+     ➤ ns:m.03_js (John Adams) ns:government.politician.government_positions_held ?p .
+     ➤ ?p ns:government.government_position_held.office_position_or_title ns:m.060d2 (President of the United States) .
+     ➤ ?p ns:government.government_position_held.from ?from .
+     ➤ ns:m.03_js (John Adams) ns:government.politician.government_positions_held ?y .
+     ➤ ?y ns:government.government_position_held.office_position_or_title ?x .
+     ➤ ?y ns:government.government_position_held.from ?z .
+     ➤ ?x ns:government.government_office_or_title.office_holders ?c .
+     ➤ ?c ns:government.government_position_held.from "1782-04-19"^^xsd:dateTime .
+        └ ?c = m.04mm9r6 (UNKNOWN, type = government.government_position_held)
+        └ ?p = m.04466xb (UNKNOWN, type = government.government_position_held)
+        └ ?x = m.02q_kt_ (United States Ambassador to the Netherlands)
+        └ ?y = m.04mm9r6 (UNKNOWN, type = government.government_position_held)
+  🟢 Question: Which United States President was in office while the country was at war with Taiwan?
+     ➤ ?c ns:military.military_conflict.commanders ?k .
+     ➤ ?k ns:military.military_command.military_combatant ns:m.06f32 (Taiwan) .
+     ➤ ?c ns:time.event.start_date ?start ;
+     ➤ ns:time.event.end_date ?end .
+     ➤ ?x ns:government.politician.government_positions_held  ?y .
+     ➤ ?y ns:government.government_position_held.office_position_or_title ns:m.060d2 (President of the United States) ; # President of the United States
+     ➤ ns:government.government_position_held.from  ?from ;
+     ➤ ns:government.government_position_held.to  ?to .
+        └ ?c = m.081pw (World War II)
+        └ ?k = m.02h7nn7 (UNKNOWN, type = military.military_command)
+        └ ?x = m.09bg4l (Harry S. Truman)
+        └ ?x = m.02yy8 (Franklin D. Roosevelt)
+        └ ?y = m.03fx817 (UNKNOWN, type = government.government_position_held)
+        └ ?y = m.03q2h_9 (UNKNOWN, type = government.government_position_held)
+
+🔸 10-hop 示例:
+  🟢 Question: What country that is a main trader with China is where Vicki Buck was born?
+     ➤ ns:m.0d05w3 (China) ns:location.statistical_region.places_exported_to ?y .
+     ➤ ?y ns:location.imports_and_exports.exported_to ?x .
+     ➤ ?x ns:location.location.people_born_here ?c .
+     ➤ ?c ns:type.object.name "Vicki Buck"@en .
+     ➤ ns:m.0d05w3 (China) ns:location.statistical_region.places_imported_from ?y .
+     ➤ ?y ns:location.imports_and_exports.imported_from ?x .
+     ➤ ?x ns:location.location.people_born_here ?c .
+     ➤ ?c ns:type.object.name "Vicki Buck"@en .
+     ➤ ?x ns:location.location.people_born_here ?c .
+     ➤ ?c ns:type.object.name "Vicki Buck"@en .
+        └ ?c = m.0ckc63 (Vicki Buck)
+        └ ?x = m.0ctw_b (New Zealand)
+        └ ?y = m.04gdr87 (UNKNOWN, type = location.imports_and_exports)

@@ -104,8 +104,8 @@ def parameter_parser():
     # 数据集名称
     parser.add_argument("--dataset",
                         type=str,
-                        default='AIDS',
-                        help="dataset name")
+                        default='simpleqa',
+                        help="dataset name: simpleqa, webquestions, grailqa, webqsp, cwq")
 
     # 模型名（可影响保存路径或加载路径）
     parser.add_argument("--model-name",
@@ -127,5 +127,10 @@ def parameter_parser():
                         default=100,
                         help="The number of testing graph pairs for each graph.")
 
+    ################################ LLM 设置 ################################
+    parser.add_argument("--llm",
+                    type=str,
+                    default="openchat",
+                    help="The LLM to use. Select from: openchat, mistralai7B, nousResearch, mixtral8x, llama2, llama3, gemma, zephyr, starling, qwen, yi")
     
     return parser.parse_args()

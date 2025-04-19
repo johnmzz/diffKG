@@ -1,0 +1,248 @@
+
+📊 所有 SPARQL 跳数分布:
+🔹 1-hop: 1009 条
+🔹 2-hop: 386 条
+🔹 3-hop: 281 条
+🔹 4-hop: 82 条
+🔹 5-hop: 40 条
+🔹 6-hop: 5 条
+🔹 7-hop: 7 条
+🔹 8-hop: 3 条
+
+📌 每个 hop 示例及变量绑定:
+
+
+🔸 1-hop 示例:
+  🟢 Question: who influenced samuel taylor coleridge?
+     ➤ ns:m.078w2 (Samuel Taylor Coleridge) ns:influence.influence_node.influenced_by ?x .
+        └ ?x = m.0nld (Algernon Charles Swinburne)
+        └ ?x = m.015_hb (Giambattista Vico)
+        └ ?x = m.015n8 (Baruch Spinoza)
+  🟢 Question: what county is st. louis park in?
+     ➤ ns:m.0xdhj (St. Louis Park) ns:location.hud_county_place.county ?x .
+        └ ?x = m.0nhmw (Hennepin County)
+  🟢 Question: what are the catholic holy days?
+     ➤ ns:m.0c8wxp (Catholicism) ns:religion.religion.holidays ?x .
+        └ ?x = m.0n_fbc8 (St Nicholas Day)
+        └ ?x = m.0_mrbts (Feast of Assumption)
+        └ ?x = m.05b22_z (World Day of Peace)
+
+🔸 2-hop 示例:
+  🟢 Question: what county is st. louis park in?
+     ➤ ns:m.0xdhj (St. Louis Park) ns:location.location.containedby ?x .
+     ➤ ?x ns:common.topic.notable_types ns:m.0kpym_ (US County) .
+        └ ?x = m.0nhmw (Hennepin County)
+  🟢 Question: what school did michael jordan attend?
+     ➤ ns:m.054c1 (Michael Jordan) ns:people.person.education ?y .
+     ➤ ?y ns:education.education.institution ?x .
+        └ ?x = m.0bx8pn (University of North Carolina at Chapel Hill)
+        └ ?x = m.07qymj (Emsley A. Laney High School)
+        └ ?y = m.04g36q3 (UNKNOWN, type = education.education)
+        └ ?y = m.0jwk2zd (UNKNOWN, type = education.education)
+  🟢 Question: where did hugo chavez go to school?
+     ➤ ns:m.0d1b_ (Hugo Chávez) ns:people.person.education ?y .
+     ➤ ?y ns:education.education.institution ?x .
+        └ ?x = m.0467s09 (Daniel Florencio O'Leary School)
+        └ ?x = m.0467r_n (Julian Pino School)
+        └ ?x = m.08fk_z (Bolivarian Military University of Venezuela)
+        └ ?y = m.0467s06 (UNKNOWN, type = education.education)
+        └ ?y = m.0467r_k (UNKNOWN, type = education.education)
+        └ ?y = m.0467s0w (UNKNOWN, type = education.education)
+
+🔸 3-hop 示例:
+  🟢 Question: who did viggo mortensen play in lord of the rings?
+     ➤ ns:m.01ps2h8 (Viggo Mortensen) ns:film.actor.film ?y .
+     ➤ ?y ns:film.performance.character ?x .
+     ➤ ?y ns:film.performance.film ns:m.017gl1 (The Lord of the Rings: The Fellowship of the Ring) .
+        └ ?x = m.0gwlg (Aragorn)
+        └ ?y = m.0k5s9k (UNKNOWN, type = film.performance)
+  🟢 Question: who did viggo mortensen play in lord of the rings?
+     ➤ ns:m.01ps2h8 (Viggo Mortensen) ns:film.actor.film ?y .
+     ➤ ?y ns:film.performance.character ?x .
+     ➤ ?y ns:film.performance.film ns:m.017jd9 (The Lord of the Rings: The Return of the King) .
+        └ ?x = m.0gwlg (Aragorn)
+        └ ?y = m.0k5scp (UNKNOWN, type = film.performance)
+  🟢 Question: who did viggo mortensen play in lord of the rings?
+     ➤ ns:m.01ps2h8 (Viggo Mortensen) ns:film.actor.film ?y .
+     ➤ ?y ns:film.performance.character ?x .
+     ➤ ?y ns:film.performance.film ns:m.017gm7 (The Lord of the Rings: The Two Towers) .
+        └ ?x = m.0gwlg (Aragorn)
+        └ ?y = m.0k5sfk (UNKNOWN, type = film.performance)
+
+🔸 4-hop 示例:
+  🟢 Question: who plays blaine in batman?
+     ➤ ns:m.0321b4 (Bane) ns:film.film_character.portrayed_in_films ?y .
+     ➤ ?y ns:film.performance.actor ?x .
+     ➤ ns:m.0321b4 (Bane) ns:tv.tv_character.appeared_in_tv_program ?y .
+     ➤ ?y ns:tv.regular_tv_appearance.actor ?x .
+        └ ?x = m.0115x7ps (Matthew Wagner)
+        └ ?x = m.01xllf (Danny Trejo)
+        └ ?x = m.02hblj (Carlos Alazraqui)
+        └ ?y = m.0115x7pq (UNKNOWN, type = film.performance)
+        └ ?y = m.0h1jdg2 (UNKNOWN, type = tv.regular_tv_appearance)
+        └ ?y = m.0j2ps7d (UNKNOWN, type = film.performance)
+  🟢 Question: who does michael oher play for in 2010?
+     ➤ ns:m.0h7q7b (Michael Oher) ns:sports.pro_athlete.teams ?y .
+     ➤ ?y ns:sports.sports_team_roster.team ?x .
+     ➤ EXISTS {?y ns:sports.sports_team_roster.from ?sk1 .
+     ➤ EXISTS {?y ns:sports.sports_team_roster.to ?sk3 .
+        └ ?x = m.01ct6 (Baltimore Ravens)
+        └ ?y = m.05t_wzd (UNKNOWN, type = sports.sports_team_roster)
+  🟢 Question: what all does google now do?
+     ➤ ns:m.045c7b (Google) ns:business.consumer_company.products ?y .
+     ➤ ?y ns:business.company_product_relationship.consumer_product ?x .
+     ➤ EXISTS {?y ns:business.company_product_relationship.from_date ?sk1 .
+     ➤ EXISTS {?y ns:business.company_product_relationship.to_date ?sk3 .
+        └ ?x = m.0pb8gtr (Google Maps)
+        └ ?x = m.0dm258 (Google Docs, Sheets, and Slides)
+        └ ?x = m.0k2998k (Nexus Q)
+        └ ?y = m.0w1jflq (UNKNOWN, type = business.company_product_relationship)
+        └ ?y = m.0wf8tsc (UNKNOWN, type = business.company_product_relationship)
+        └ ?y = m.011j632g (UNKNOWN, type = business.company_product_relationship)
+
+🔸 5-hop 示例:
+  🟢 Question: who is the head coach of inter milan?
+     ➤ ns:m.03x6m (Inter Milan) ns:sports.sports_team.coaches ?y .
+     ➤ ?y ns:sports.sports_team_coach_tenure.coach ?x .
+     ➤ ?y ns:sports.sports_team_coach_tenure.position ns:m.02md_2 (Head coach) .
+     ➤ EXISTS {?y ns:sports.sports_team_coach_tenure.from ?sk1 .
+     ➤ EXISTS {?y ns:sports.sports_team_coach_tenure.to ?sk3 .
+        └ ?x = m.026g1wf (Walter Mazzarri)
+        └ ?y = m.0w68_yf (UNKNOWN, type = sports.sports_team_coach_tenure)
+  🟢 Question: who is the king of cambodia now?
+     ➤ ns:m.01xbgx (Cambodia) ns:government.governmental_jurisdiction.governing_officials ?y .
+     ➤ ?y ns:government.government_position_held.office_holder ?x .
+     ➤ ?y ns:government.government_position_held.basic_title ns:m.03w9bnr (King) .
+     ➤ EXISTS {?y ns:government.government_position_held.from ?sk1 .
+     ➤ EXISTS {?y ns:government.government_position_held.to ?sk3 .
+        └ ?x = m.0418zp (Norodom Sihamoni)
+        └ ?y = m.0j5qxdm (UNKNOWN, type = government.government_position_held)
+  🟢 Question: who are the senators of virginia 2013?
+     ➤ ns:m.07z1m (Virginia) ns:government.political_district.representatives ?y .
+     ➤ ?y ns:government.government_position_held.office_holder ?x .
+     ➤ ?y ns:government.government_position_held.governmental_body ns:m.07t58 (United States Senate) .
+     ➤ EXISTS {?y ns:government.government_position_held.from ?sk1 .
+     ➤ EXISTS {?y ns:government.government_position_held.to ?sk3 .
+        └ ?x = m.053f8h (Tim Kaine)
+        └ ?x = m.024mm1 (Mark Warner)
+        └ ?x = m.0574xy (Jim Webb)
+        └ ?y = m.05kfcm1 (UNKNOWN, type = government.government_position_held)
+        └ ?y = m.05kfcw0 (UNKNOWN, type = government.government_position_held)
+        └ ?y = m.0r99pcd (UNKNOWN, type = government.government_position_held)
+
+🔸 6-hop 示例:
+  🟢 Question: who was the leader of the us during wwii?
+     ➤ ns:m.081pw (World War II) ns:time.event.start_date ?start ;
+     ➤ ns:time.event.end_date ?end .
+     ➤ ?x ns:government.politician.government_positions_held  ?y .
+     ➤ ?y ns:government.government_position_held.office_position_or_title ns:m.060d2 (President of the United States) ; # President of the United States
+     ➤ ns:government.government_position_held.from  ?from ;
+     ➤ ns:government.government_position_held.to  ?to .
+        └ ?x = m.02yy8 (Franklin D. Roosevelt)
+        └ ?x = m.09bg4l (Harry S. Truman)
+        └ ?y = m.03fx817 (UNKNOWN, type = government.government_position_held)
+        └ ?y = m.03q2h_9 (UNKNOWN, type = government.government_position_held)
+  🟢 Question: what basketball player is married to monica?
+     ➤ ns:m.01fs85 (Monica) ns:people.person.spouse_s ?y .
+     ➤ ?y ns:people.marriage.spouse ?x .
+     ➤ ?y ns:people.marriage.type_of_union ns:m.04ztj (Marriage) .
+     ➤ ?x ns:people.person.profession ns:m.02h664x (Basketball player) .
+     ➤ EXISTS {?y ns:people.marriage.from ?sk1 .
+     ➤ EXISTS {?y ns:people.marriage.to ?sk3 .
+        └ ?x = m.0f2zfl (Shannon Brown)
+        └ ?y = m.0h3gsqb (UNKNOWN, type = people.marriage)
+  🟢 Question: who played darth vader in the first movie?
+     ➤ ns:m.0f2y0 (Darth Vader) ns:film.film_character.portrayed_in_films ?y .  # Darth Vader
+     ➤ ?y ns:film.performance.film ?f1 .
+     ➤ ?f1 ns:film.film.initial_release_date ?d .
+     ➤ ns:m.0f2y0 (Darth Vader) ns:film.film_character.portrayed_in_films ?y .  # Darth Vader
+     ➤ ?y ns:film.performance.actor ?x ;
+     ➤ ns:film.performance.film ?f .
+        └ ?f = m.0dtfn (Star Wars)
+        └ ?f1 = m.0dtfn (Star Wars)
+        └ ?x = m.03xblf (David Prowse)
+        └ ?x = m.0f6_x (James Earl Jones)
+        └ ?y = m.0235q84 (UNKNOWN, type = film.performance)
+        └ ?y = m.02nv74t (UNKNOWN, type = film.performance)
+
+🔸 7-hop 示例:
+  🟢 Question: who is in paul ryan's family?
+     ➤ ns:m.024v2j (Paul Ryan) ns:people.person.parents ?x .
+     ➤ ns:m.024v2j (Paul Ryan) ns:people.person.children ?x .
+     ➤ ns:m.024v2j (Paul Ryan) ns:people.person.sibling_s ?y .
+     ➤ ?y ns:people.sibling_relationship.sibling ?x .
+     ➤ ns:m.024v2j (Paul Ryan) ns:people.person.spouse_s ?y .
+     ➤ ?y ns:people.marriage.spouse ?x .
+     ➤ ?y ns:people.marriage.type_of_union ns:m.04ztj (Marriage) .
+        └ ?x = m.0kr8tj2 (Samuel Ryan)
+        └ ?x = m.0j6fhh8 (Janna Ryan)
+        └ ?x = m.0qf0hct (Elizabeth A. Ryan)
+        └ ?y = m.0j6fhhg (UNKNOWN, type = people.marriage)
+  🟢 Question: what did james k polk do before he was president?
+     ➤ ns:m.042f1 (James K. Polk) ns:government.politician.government_positions_held ?y . # James K. Polk
+     ➤ ?y ns:government.government_position_held.office_position_or_title ?x ;
+     ➤ ns:government.government_position_held.basic_title ns:m.060c4 (President) ; # President
+     ➤ ns:government.government_position_held.from ?pFrom .
+     ➤ ns:m.042f1 (James K. Polk) ns:government.politician.government_positions_held ?y . # James K. Polk
+     ➤ ?y ns:government.government_position_held.office_position_or_title ?x ;
+     ➤ ns:government.government_position_held.from ?from .
+        └ ?x = m.0cgqx (Speaker of the United States House of Representatives)
+        └ ?x = m.02_bcst (United States Representative)
+        └ ?x = m.04x_n9q (Governor of Tennessee)
+        └ ?y = m.04j5sk8 (UNKNOWN, type = government.government_position_held)
+        └ ?y = m.04j60kc (UNKNOWN, type = government.government_position_held)
+        └ ?y = m.0944j8_ (UNKNOWN, type = government.government_position_held)
+  🟢 Question: who did nasri play for before arsenal?
+     ➤ filter(?x != ns:m.0xbm (Arsenal F.C.))
+     ➤ ns:m.0f2dbm (Samir Nasri) ns:sports.pro_athlete.teams ?z . #Samir Nasri
+     ➤ ?z ns:sports.sports_team_roster.team ns:m.0xbm (Arsenal F.C.)  . #arsenal
+     ➤ ?z ns:sports.sports_team_roster.from ?from .
+     ➤ ns:m.0f2dbm (Samir Nasri) ns:sports.pro_athlete.teams ?y . #Samir Nasri
+     ➤ ?y ns:sports.sports_team_roster.team ?x .
+     ➤ ?y  ns:sports.sports_team_roster.to ?to .
+        └ ?x = m.02gys2 (Olympique de Marseille)
+        └ ?y = m.0jytjkq (UNKNOWN, type = sports.sports_team_roster)
+        └ ?z = m.04mb0rc (UNKNOWN, type = sports.sports_team_roster)
+
+🔸 8-hop 示例:
+  🟢 Question: what super bowl did peyton manning win?
+     ➤ ns:m.027jv8 (Peyton Manning) ns:sports.pro_athlete.teams ?y .
+     ➤ ?y ns:sports.sports_team_roster.team ?x . #team
+     ➤ ?x ns:sports.sports_team.championships ?z . # super bowls
+     ➤ ?z ns:common.topic.notable_types ns:m.01xljv1 (Super bowl) . #super bowl
+     ➤ ?z ns:sports.sports_championship_event.champion ?c .
+     ➤ ?z ns:time.event.start_date ?a .
+     ➤ EXISTS {?y ns:sports.sports_team_roster.from ?sk1 .
+     ➤ EXISTS {?y ns:sports.sports_team_roster.to ?sk3 .
+        └ ?c = m.03wnh (Indianapolis Colts)
+        └ ?x = m.03wnh (Indianapolis Colts)
+        └ ?y = m.0j4z5bh (UNKNOWN, type = sports.sports_team_roster)
+        └ ?z = m.04k5qm (Super Bowl XLI)
+  🟢 Question: what years did joe montana win super bowl?
+     ➤ ns:m.01r6hc (Joe Montana) ns:sports.pro_athlete.teams ?y .
+     ➤ ?y ns:sports.sports_team_roster.team ?x . #team
+     ➤ ?x ns:sports.sports_team.championships ?z . # super bowls
+     ➤ ?z ns:common.topic.notable_types ns:m.01xljv1 (Super bowl) . #super bowl
+     ➤ ?z ns:sports.sports_championship_event.champion ?c .
+     ➤ ?z ns:time.event.start_date ?a .
+     ➤ EXISTS {?y ns:sports.sports_team_roster.from ?sk1 .
+     ➤ EXISTS {?y ns:sports.sports_team_roster.to ?sk3 .
+        └ ?c = m.06rny (San Francisco 49ers)
+        └ ?x = m.06rny (San Francisco 49ers)
+        └ ?y = m.04nk3bx (UNKNOWN, type = common.topic)
+        └ ?z = m.076tx (Super Bowl XXIV)
+        └ ?z = m.076tk (Super Bowl XXIII)
+        └ ?z = m.076sj (Super Bowl XIX)
+  🟢 Question: who is meredith gray married to in real life?
+     ➤ ns:m.0268x2f (Meredith Grey) ns:tv.tv_character.appeared_in_tv_program ?y .
+     ➤ ?y ns:tv.regular_tv_appearance.actor ?z .
+     ➤ ?z ns:people.person.spouse_s ?s .
+     ➤ ?s ns:people.marriage.spouse ?x .
+     ➤ ?s ns:people.marriage.type_of_union ns:m.04ztj (Marriage) .
+     ➤ EXISTS {?s ns:people.marriage.from ?sk1 .
+     ➤ EXISTS {?s ns:people.marriage.to ?sk3 .
+     ➤ ?s ns:people.marriage.from ?sk4 .
+        └ ?s = m.0ddrs14 (UNKNOWN, type = people.marriage)
+        └ ?x = m.09k5l7w (Chris Ivery)
+        └ ?y = m.02nv3j_ (UNKNOWN, type = tv.regular_tv_appearance)
+        └ ?z = m.05np4c (Ellen Pompeo)

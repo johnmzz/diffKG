@@ -1,450 +1,1484 @@
 {
-    "m.02qkg8m": {
-        "m.0dh1n_": {
+    "m.03_r3": {
+        "m.04ygk0": {
             "forward": [
-                "film.film.film_art_direction_by"
-            ],
-            "backward": [
-                "film.film_art_director.films_art_directed"
-            ]
-        },
-        "m.02822": {
-            "forward": [
-                "film.film.genre"
-            ],
-            "backward": [
-                "film.film_genre.films_in_this_genre"
-            ]
-        },
-        "m.02h40lc": {
-            "forward": [
-                "film.film.language"
+                "location.country.languages_spoken"
             ],
             "backward": []
         },
-        "m.09c7w0": {
+        "m.01428y": {
             "forward": [
-                "film.film.country"
+                "location.country.languages_spoken"
             ],
             "backward": []
         },
-        "m.0jsg2m": {
+        "m.0428_d": {
+            "forward": [
+                "location.location.contains",
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.06qrcv": {
+            "forward": [
+                "location.location.contains",
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.051qwh": {
+            "forward": [
+                "location.location.contains",
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.06f7lp": {
+            "forward": [
+                "location.location.contains",
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.04mj73": {
+            "forward": [
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.07mqgt": {
+            "forward": [
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.08sygv": {
+            "forward": [
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.06qrc3": {
+            "forward": [
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.07mgkk": {
+            "forward": [
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.04npxh": {
+            "forward": [
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.02mzmt": {
+            "forward": [
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.06wdf_": {
+            "forward": [
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.05zlkh": {
+            "forward": [
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.05wsq4": {
+            "forward": [
+                "location.country.administrative_divisions"
+            ],
+            "backward": []
+        },
+        "m.0bk0_t": {
+            "forward": [
+                "award.award_presenting_organization.awards_presented"
+            ],
+            "backward": []
+        },
+        "m.0j3cbdg": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.0kvk8w4": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.0dm3znt": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.03f7ygq": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.01mp2pf": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.01vhl1s": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.010nqq__": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.01n8jsb": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.011c963m": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.05x3fk0": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.05q92vy": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.026x26x": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.06c39p": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.0417hgk": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.02pxycg": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.01_z6_": {
+            "forward": [
+                "sports.sport_country.multi_event_tournaments_participated_in"
+            ],
+            "backward": []
+        },
+        "m.01v3y2s": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.01v708b": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.0glrb20": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.03h27j9": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.04jxcc": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.0685np": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.0n464bj": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.0czb2cj": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.01vt7qd": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.03f7gff": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.04cx_4": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.04d2qw7": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.01v3q84": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.03143m": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.0b61rt": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.0cdmf8": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.03j1qnh": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.071k5w": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.05wmym4": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.064l8xd": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.04gpq8n": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.05y4ty1": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.0dq85js": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.0wpcdd6": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.03h_pk8": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.02r5sxp": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.059g4": {
+            "forward": [
+                "location.location.containedby"
+            ],
+            "backward": []
+        },
+        "m.09b8m": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.01mp": {
             "forward": [
                 "common.topic.notable_types"
             ],
             "backward": []
         },
-        "m.02wtdkf": {
+        "m.018ctl": {
             "forward": [
-                "film.film.genre"
-            ],
-            "backward": [
-                "film.film_genre.films_in_this_genre"
-            ]
-        },
-        "m.04t36": {
-            "forward": [
-                "film.film.genre"
-            ],
-            "backward": [
-                "film.film_genre.films_in_this_genre"
-            ]
-        },
-        "m.072twv": {
-            "forward": [
-                "film.film.film_art_direction_by"
-            ],
-            "backward": [
-                "film.film_art_director.films_art_directed"
-            ]
-        },
-        "m.09x8ms": {
-            "forward": [
-                "film.film.costume_design_by"
-            ],
-            "backward": [
-                "film.film_costumer_designer.costume_design_for_film"
-            ]
-        },
-        "m.0fzyg": {
-            "forward": [
-                "film.film.subjects"
-            ],
-            "backward": [
-                "film.film_subject.films"
-            ]
-        },
-        "m.02rf51g": {
-            "forward": [
-                "film.film.music"
-            ],
-            "backward": [
-                "film.music_contributor.film"
-            ]
-        },
-        "m.03cmvs3": {
-            "forward": [
-                "film.film.music"
-            ],
-            "backward": [
-                "film.music_contributor.film"
-            ]
-        },
-        "m.0cxgzr": {
-            "forward": [
-                "film.film.edited_by"
-            ],
-            "backward": [
-                "film.editor.film"
-            ]
-        },
-        "m.01v5h": {
-            "forward": [
-                "film.film.produced_by",
-                "film.film.directed_by"
-            ],
-            "backward": [
-                "film.producer.film",
-                "film.director.film"
-            ]
-        },
-        "m.02rybfn": {
-            "forward": [
-                "film.film.cinematography"
-            ],
-            "backward": [
-                "film.cinematographer.film"
-            ]
-        },
-        "m.03q2_b": {
-            "forward": [
-                "film.film.music"
-            ],
-            "backward": [
-                "film.music_contributor.film"
-            ]
-        },
-        "m.02qkg8q": {
-            "forward": [
-                "common.topic.article"
+                "olympics.olympic_participating_country.olympics_participated_in"
             ],
             "backward": []
         },
-        "m.0cj977r": {
+        "m.03mfdg": {
             "forward": [
-                "common.topic.webpage"
+                "olympics.olympic_participating_country.olympics_participated_in"
             ],
-            "backward": [
-                "common.webpage.topic"
-            ]
+            "backward": []
         },
-        "m.03kx9f2": {
+        "m.01m9fzq": {
             "forward": [
-                "film.film.runtime"
+                "location.location.people_born_here"
             ],
-            "backward": [
-                "film.film_cut.film"
-            ]
+            "backward": []
         },
-        "m.02vc3qy": {
+        "m.01mp2r3": {
             "forward": [
-                "film.film.starring"
+                "location.location.people_born_here"
             ],
-            "backward": [
-                "film.performance.film"
-            ]
+            "backward": []
         },
-        "m.02tb01n": {
+        "m.01qyh43": {
             "forward": [
-                "film.film.starring"
+                "location.location.people_born_here"
             ],
-            "backward": [
-                "film.performance.film"
-            ]
+            "backward": []
         },
-        "m.040h91m": {
+        "m.03f02vp": {
             "forward": [
-                "film.film.starring"
+                "location.location.people_born_here"
             ],
-            "backward": [
-                "film.performance.film"
-            ]
+            "backward": []
         },
-        "m.05t8gvg": {
+        "m.05t0fmd": {
             "forward": [
-                "film.film.distributors"
+                "location.location.people_born_here"
             ],
-            "backward": [
-                "film.film_film_distributor_relationship.film"
-            ]
+            "backward": []
         },
-        "m.0bvmrrz": {
+        "m.01vt6x9": {
             "forward": [
-                "award.ranked_item.appears_in_ranked_lists"
+                "location.location.people_born_here"
             ],
-            "backward": [
-                "award.ranking.item"
-            ]
+            "backward": []
+        },
+        "m.03c4lw8": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.07kckc2": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.0nhts5v": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.03ctwsf": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.01pc__6": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.0wc5p6t": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.0xnq27g": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.0d_g0j": {
+            "forward": [
+                "location.location.people_born_here"
+            ],
+            "backward": []
+        },
+        "m.01rll_": {
+            "forward": [
+                "location.location.containedby"
+            ],
+            "backward": []
+        },
+        "m.02pkrt4": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.0b5rd6": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.071fp2": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.03bw05c": {
+            "forward": [
+                "freebase.valuenotation.is_reviewed"
+            ],
+            "backward": []
+        },
+        "m.09kzjz": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.02838yn": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.07c5l": {
+            "forward": [
+                "location.location.containedby"
+            ],
+            "backward": []
+        },
+        "m.02jfq3": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.0kbws": {
+            "forward": [
+                "olympics.olympic_participating_country.olympics_participated_in"
+            ],
+            "backward": []
+        },
+        "m.0lgxj": {
+            "forward": [
+                "olympics.olympic_participating_country.olympics_participated_in"
+            ],
+            "backward": []
+        },
+        "m.08rpnd": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.0cp1fck": {
+            "forward": [
+                "location.location.events"
+            ],
+            "backward": []
+        },
+        "m.09n48": {
+            "forward": [
+                "olympics.olympic_participating_country.olympics_participated_in"
+            ],
+            "backward": []
+        },
+        "m.0n8ldl4": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.0cply_s": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.05q4c0h": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.03yjrvg": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.06ztrw2": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
+        },
+        "m.0hypqhk": {
+            "forward": [
+                "location.location.contains"
+            ],
+            "backward": []
         }
     },
-    "m.0dh1n_": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.film_art_director.films_art_directed"
-            ],
-            "backward": [
-                "film.film.film_art_direction_by"
-            ]
-        }
-    },
-    "m.02822": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.film_genre.films_in_this_genre"
-            ],
-            "backward": [
-                "film.film.genre"
-            ]
-        }
-    },
-    "m.02h40lc": {
-        "m.02qkg8m": {
+    "m.04ygk0": {
+        "m.03_r3": {
             "forward": [],
             "backward": [
-                "film.film.language"
+                "location.country.languages_spoken"
             ]
         }
     },
-    "m.09c7w0": {
-        "m.02qkg8m": {
+    "m.01428y": {
+        "m.03_r3": {
             "forward": [],
             "backward": [
-                "film.film.country"
+                "location.country.languages_spoken"
             ]
         }
     },
-    "m.0jsg2m": {
-        "m.02qkg8m": {
+    "m.0428_d": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains",
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.06qrcv": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains",
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.051qwh": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains",
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.06f7lp": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains",
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.04mj73": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.07mqgt": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.08sygv": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.06qrc3": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.07mgkk": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.04npxh": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.02mzmt": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.06wdf_": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.05zlkh": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.05wsq4": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.country.administrative_divisions"
+            ]
+        }
+    },
+    "m.0bk0_t": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "award.award_presenting_organization.awards_presented"
+            ]
+        }
+    },
+    "m.0j3cbdg": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.0kvk8w4": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.0dm3znt": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.03f7ygq": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.01mp2pf": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.01vhl1s": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.010nqq__": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.01n8jsb": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.011c963m": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.05x3fk0": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.05q92vy": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.026x26x": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.06c39p": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.0417hgk": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.02pxycg": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.01_z6_": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "sports.sport_country.multi_event_tournaments_participated_in"
+            ]
+        }
+    },
+    "m.01v3y2s": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.01v708b": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.0glrb20": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.03h27j9": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.04jxcc": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.0685np": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.0n464bj": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.0czb2cj": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.01vt7qd": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.03f7gff": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.04cx_4": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.04d2qw7": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.01v3q84": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.03143m": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.0b61rt": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.0cdmf8": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.03j1qnh": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.071k5w": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.05wmym4": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.064l8xd": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.04gpq8n": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.05y4ty1": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.0dq85js": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.0wpcdd6": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.03h_pk8": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.02r5sxp": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.059g4": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.containedby"
+            ]
+        }
+    },
+    "m.09b8m": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.01mp": {
+        "m.03_r3": {
             "forward": [],
             "backward": [
                 "common.topic.notable_types"
             ]
         }
     },
-    "m.02wtdkf": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.film_genre.films_in_this_genre"
-            ],
-            "backward": [
-                "film.film.genre"
-            ]
-        }
-    },
-    "m.04t36": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.film_genre.films_in_this_genre"
-            ],
-            "backward": [
-                "film.film.genre"
-            ]
-        }
-    },
-    "m.072twv": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.film_art_director.films_art_directed"
-            ],
-            "backward": [
-                "film.film.film_art_direction_by"
-            ]
-        }
-    },
-    "m.09x8ms": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.film_costumer_designer.costume_design_for_film"
-            ],
-            "backward": [
-                "film.film.costume_design_by"
-            ]
-        }
-    },
-    "m.0fzyg": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.film_subject.films"
-            ],
-            "backward": [
-                "film.film.subjects"
-            ]
-        }
-    },
-    "m.02rf51g": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.music_contributor.film"
-            ],
-            "backward": [
-                "film.film.music"
-            ]
-        }
-    },
-    "m.03cmvs3": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.music_contributor.film"
-            ],
-            "backward": [
-                "film.film.music"
-            ]
-        }
-    },
-    "m.0cxgzr": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.editor.film"
-            ],
-            "backward": [
-                "film.film.edited_by"
-            ]
-        }
-    },
-    "m.01v5h": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.producer.film",
-                "film.director.film"
-            ],
-            "backward": [
-                "film.film.produced_by",
-                "film.film.directed_by"
-            ]
-        }
-    },
-    "m.02rybfn": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.cinematographer.film"
-            ],
-            "backward": [
-                "film.film.cinematography"
-            ]
-        }
-    },
-    "m.03q2_b": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.music_contributor.film"
-            ],
-            "backward": [
-                "film.film.music"
-            ]
-        }
-    },
-    "m.02qkg8q": {
-        "m.02qkg8m": {
+    "m.018ctl": {
+        "m.03_r3": {
             "forward": [],
             "backward": [
-                "common.topic.article"
+                "olympics.olympic_participating_country.olympics_participated_in"
             ]
         }
     },
-    "m.0cj977r": {
-        "m.02qkg8m": {
-            "forward": [
-                "common.webpage.topic"
-            ],
+    "m.03mfdg": {
+        "m.03_r3": {
+            "forward": [],
             "backward": [
-                "common.topic.webpage"
+                "olympics.olympic_participating_country.olympics_participated_in"
             ]
         }
     },
-    "m.03kx9f2": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.film_cut.film"
-            ],
+    "m.01m9fzq": {
+        "m.03_r3": {
+            "forward": [],
             "backward": [
-                "film.film.runtime"
+                "location.location.people_born_here"
             ]
         }
     },
-    "m.02vc3qy": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.performance.film"
-            ],
+    "m.01mp2r3": {
+        "m.03_r3": {
+            "forward": [],
             "backward": [
-                "film.film.starring"
+                "location.location.people_born_here"
             ]
         }
     },
-    "m.02tb01n": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.performance.film"
-            ],
+    "m.01qyh43": {
+        "m.03_r3": {
+            "forward": [],
             "backward": [
-                "film.film.starring"
+                "location.location.people_born_here"
             ]
         }
     },
-    "m.040h91m": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.performance.film"
-            ],
+    "m.03f02vp": {
+        "m.03_r3": {
+            "forward": [],
             "backward": [
-                "film.film.starring"
+                "location.location.people_born_here"
             ]
         }
     },
-    "m.05t8gvg": {
-        "m.02qkg8m": {
-            "forward": [
-                "film.film_film_distributor_relationship.film"
-            ],
+    "m.05t0fmd": {
+        "m.03_r3": {
+            "forward": [],
             "backward": [
-                "film.film.distributors"
+                "location.location.people_born_here"
             ]
         }
     },
-    "m.0bvmrrz": {
-        "m.02qkg8m": {
-            "forward": [
-                "award.ranking.item"
-            ],
+    "m.01vt6x9": {
+        "m.03_r3": {
+            "forward": [],
             "backward": [
-                "award.ranked_item.appears_in_ranked_lists"
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.03c4lw8": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.07kckc2": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.0nhts5v": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.03ctwsf": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.01pc__6": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.0wc5p6t": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.0xnq27g": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.0d_g0j": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.people_born_here"
+            ]
+        }
+    },
+    "m.01rll_": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.containedby"
+            ]
+        }
+    },
+    "m.02pkrt4": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.0b5rd6": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.071fp2": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.03bw05c": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "freebase.valuenotation.is_reviewed"
+            ]
+        }
+    },
+    "m.09kzjz": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.02838yn": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.07c5l": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.containedby"
+            ]
+        }
+    },
+    "m.02jfq3": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.0kbws": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "olympics.olympic_participating_country.olympics_participated_in"
+            ]
+        }
+    },
+    "m.0lgxj": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "olympics.olympic_participating_country.olympics_participated_in"
+            ]
+        }
+    },
+    "m.08rpnd": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.0cp1fck": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.events"
+            ]
+        }
+    },
+    "m.09n48": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "olympics.olympic_participating_country.olympics_participated_in"
+            ]
+        }
+    },
+    "m.0n8ldl4": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.0cply_s": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.05q4c0h": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.03yjrvg": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.06ztrw2": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
+            ]
+        }
+    },
+    "m.0hypqhk": {
+        "m.03_r3": {
+            "forward": [],
+            "backward": [
+                "location.location.contains"
             ]
         }
     }
 }{
-    "m.02qkg8m": "Madam Satan",
-    "m.0dh1n_": "Mitchell Leisen",
-    "m.02822": "Drama",
-    "m.02h40lc": "English Language",
-    "m.09c7w0": "United States of America",
-    "m.0jsg2m": "Film",
-    "m.02wtdkf": "Musical Drama",
-    "m.04t36": "Backstage Musical",
-    "m.072twv": "Cedric Gibbons",
-    "m.09x8ms": "Adrian Adolph Greenberg",
-    "m.0fzyg": "Aviation",
-    "m.02rf51g": "Herbert Stothart",
-    "m.03cmvs3": "Clifford Grey",
-    "m.0cxgzr": "Anne Bauchens",
-    "m.01v5h": "Cecil B. DeMille",
-    "m.02rybfn": "Harold Rosson",
-    "m.03q2_b": "Elsie Janis",
-    "m.02qkg8q": "Unnamed Entity",
-    "m.0cj977r": "Unnamed Entity",
-    "m.03kx9f2": "Unnamed Entity",
-    "m.02vc3qy": "Unnamed Entity",
-    "m.02tb01n": "Unnamed Entity",
-    "m.040h91m": "Unnamed Entity",
-    "m.05t8gvg": "Unnamed Entity",
-    "m.0bvmrrz": "Unnamed Entity"
+    "m.03_r3": "Jamaica",
+    "m.04ygk0": "Jamaican Creole English Language",
+    "m.01428y": "Jamaican English",
+    "m.0428_d": "Saint Thomas Parish",
+    "m.06qrcv": "Saint James Parish",
+    "m.051qwh": "Westmoreland Parish",
+    "m.06f7lp": "Portland Parish",
+    "m.04mj73": "Saint Catherine Parish",
+    "m.07mqgt": "Saint Andrew Parish",
+    "m.08sygv": "Kingston Parish",
+    "m.06qrc3": "Trelawny Parish",
+    "m.07mgkk": "Hanover Parish",
+    "m.04npxh": "Saint Mary Parish",
+    "m.02mzmt": "Saint Ann Parish",
+    "m.06wdf_": "Manchester Parish",
+    "m.05zlkh": "Clarendon Parish",
+    "m.05wsq4": "Saint Elizabeth Parish",
+    "m.0bk0_t": "Order of the Nation",
+    "m.0j3cbdg": "Lloyd Reckord",
+    "m.0kvk8w4": "Christine Day",
+    "m.0dm3znt": "Ian Salmon",
+    "m.03f7ygq": "Lone Ranger",
+    "m.01mp2pf": "Red Rat",
+    "m.01vhl1s": "Anthony Johnson",
+    "m.010nqq__": "Island Outpost",
+    "m.01n8jsb": "Bob Andy",
+    "m.011c963m": "Haliburto Berto Harris",
+    "m.05x3fk0": "Jervis Anderson",
+    "m.05q92vy": "Hopewell, Saint Andrew",
+    "m.026x26x": "George Kerr",
+    "m.06c39p": "Kwame Harris",
+    "m.0417hgk": "Demar Stewart",
+    "m.02pxycg": "Joy Gardner",
+    "m.01_z6_": "2010 Commonwealth Games",
+    "m.01v3y2s": "Pam Hall",
+    "m.01v708b": "Ansel Collins",
+    "m.0glrb20": "Heather Knight",
+    "m.03h27j9": "Roy Cousins",
+    "m.04jxcc": "Trenchtown",
+    "m.0685np": "Michie Mee",
+    "m.0n464bj": "Merchant",
+    "m.0czb2cj": "James S. Watson",
+    "m.01vt7qd": "Freddie McKay",
+    "m.03f7gff": "Prodigal Son",
+    "m.04cx_4": "Robert Hibbert",
+    "m.04d2qw7": "Clive Hunt",
+    "m.01v3q84": "Tinga Stewart",
+    "m.03143m": "Parishes of Jamaica",
+    "m.0b61rt": "Desmond Lewis",
+    "m.0cdmf8": "Paul Campbell",
+    "m.03j1qnh": "Ginjah",
+    "m.071k5w": "Mandeville",
+    "m.05wmym4": "James Berry",
+    "m.064l8xd": "Mike Elliott",
+    "m.04gpq8n": "Boi-1da",
+    "m.05y4ty1": "Margaret Cezair-Thompson",
+    "m.0dq85js": "Skarra Mucci",
+    "m.0wpcdd6": "John Crow Peak",
+    "m.03h_pk8": "Messenjah Selah",
+    "m.02r5sxp": "Opal Palmer Adisa",
+    "m.059g4": "North America",
+    "m.09b8m": "Kingston",
+    "m.01mp": "Country",
+    "m.018ctl": "2010 Winter Olympics",
+    "m.03mfdg": "2014 Winter Olympics",
+    "m.01m9fzq": "Johnny Osbourne",
+    "m.01mp2r3": "Lukie D",
+    "m.01qyh43": "Peter Metro",
+    "m.03f02vp": "Ijahman Levi",
+    "m.05t0fmd": "Ken Parker",
+    "m.01vt6x9": "Ruddy Thomas",
+    "m.03c4lw8": "Sheyla Bonnick",
+    "m.07kckc2": "Peter Blair Henry",
+    "m.0nhts5v": "Willy William",
+    "m.03ctwsf": "Nigger Kojak",
+    "m.01pc__6": "Singing Melody",
+    "m.0wc5p6t": "Kevin Foster",
+    "m.0xnq27g": "Allan MacKenzie",
+    "m.0d_g0j": "Carolyn Cooper",
+    "m.01rll_": "Greater Antilles",
+    "m.02pkrt4": "Cattawood Springs",
+    "m.0b5rd6": "Portmore, Jamaica",
+    "m.071fp2": "May Pen",
+    "m.03bw05c": "Time zone(s)",
+    "m.09kzjz": "Morant Bay",
+    "m.02838yn": "Tinson Pen Aerodrome",
+    "m.07c5l": "Americas",
+    "m.02jfq3": "Spanish Town",
+    "m.0kbws": "2008 Summer Olympics",
+    "m.0lgxj": "1952 Summer Olympics",
+    "m.08rpnd": "Port Antonio",
+    "m.0cp1fck": "Capture of the William",
+    "m.09n48": "2002 Winter Olympics",
+    "m.0n8ldl4": "Great Goat Island",
+    "m.0cply_s": "University Of Technology, Jamaica",
+    "m.05q4c0h": "Hopewell, Saint Elizabeth",
+    "m.03yjrvg": "Hyacinth Chen Nursing School",
+    "m.06ztrw2": "Cockpit Country",
+    "m.0hypqhk": "Jamaica Island"
 }
